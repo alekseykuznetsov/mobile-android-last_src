@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white" >
+
+    <TextView
+        android:id="@+id/order_complete_buy_now_ac_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/checkout_title_background"
+        android:gravity="center"
+        android:minHeight="40dip"
+        android:text="@string/buy_now_activity_title_text"
+        android:textColor="@android:color/white"
+        android:textSize="22sp" />
+
+    <RelativeLayout
+        android:id="@+id/order_complete_buy_now_ac_relative_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_complete_buy_now_ac_title"
+        android:background="@drawable/item_gradient_background"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp" >
+
+        <ImageView
+            android:id="@+id/order_complete_buy_now_ac_image"
+            android:layout_width="60dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/cap" />
+
+        <TextView
+            android:id="@+id/order_complete_buy_now_ac_product_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/order_complete_buy_now_ac_image"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/order_complete_buy_now_ac_label_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/order_complete_buy_now_ac_image"
+            android:layout_below="@id/order_complete_buy_now_ac_product_name"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/order_complete_buy_now_ac_image"
+            android:gravity="bottom"
+            android:text="Количество:"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/order_complete_buy_now_ac_count"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/order_complete_buy_now_ac_image"
+            android:layout_below="@id/order_complete_buy_now_ac_product_name"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/order_complete_buy_now_ac_label_count"
+            android:gravity="bottom"
+            android:paddingLeft="5dip"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:text="1 шт."
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/order_complete_buy_now_ac_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/order_complete_buy_now_ac_image"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/order_complete_buy_now_ac_product_name"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="bottom"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_complete_buy_now_ac_relative_item"
+        android:layout_marginLeft="3dip"
+        android:layout_marginRight="3dip"
+        android:layout_marginTop="3dip"
+        android:background="@drawable/item_gradient_background"
+        android:orientation="vertical"
+        android:padding="10dip" >
+
+        <TextView
+            android:id="@+id/order_complete_buy_now_ac_products"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:text="Итого товаров:"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/order_complete_buy_now_ac_num_products"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/order_complete_buy_now_ac_products"
+            android:textColor="@android:color/black"
+            android:text="1 шт."
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/order_complete_buy_now_ac_price_products"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/order_complete_buy_now_ac_price_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/order_complete_buy_now_ac_price_products"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/order_complete_buy_now_ac_price_products"
+            android:layout_alignBaseline="@id/order_complete_buy_now_ac_price_all"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/order_complete_buy_now_ac_price_all"
+            android:text="Итого:"
+            android:textColor="@android:color/black" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/order_complete_buy_now_ac_price_all"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical" >
+
+            <CheckBox
+                android:id="@+id/order_complete_buy_now_ac_checkbox_accept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/checkbox_background" />
+
+            <TextView
+                android:id="@+id/order_complete_buy_now_ac_text_accept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/order_complete_buy_now_ac_btn_ok"
+                style="@style/customButtonBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="Подтвердить" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

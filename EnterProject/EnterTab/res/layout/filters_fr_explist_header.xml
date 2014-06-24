@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<!-- 
+    <ru.enter.widgets.TextViewNormal
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Сортировать по:"
+        android:textColor="#f89b1c"
+        android:textSize="22dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f89b1c" />
+
+    <RadioGroup
+        android:id="@+id/filters_fr_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <ru.enter.widgets.RadioButtonNormal
+            android:id="@+id/filters_fr_radiobutton_price_lower"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:button="@null"
+            android:checked="false"
+            android:drawableRight="@drawable/checkbox_white_selector"
+            android:paddingRight="20dp"
+            android:text="По цене (сначала дешёвые)"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+        <ru.enter.widgets.RadioButtonNormal
+            android:id="@+id/filters_fr_radiobutton_price_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:button="@null"
+            android:checked="false"
+            android:drawableRight="@drawable/checkbox_white_selector"
+            android:paddingRight="20dp"
+            android:text="По цене (сначала дорогие)"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+        <ru.enter.widgets.RadioButtonNormal
+            android:id="@+id/filters_fr_radiobutton_producer_lower"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:button="@null"
+            android:checked="false"
+            android:drawableRight="@drawable/checkbox_white_selector"
+            android:paddingRight="20dp"
+            android:text="По производителю (А-Я)"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+        <ru.enter.widgets.RadioButtonNormal
+            android:id="@+id/filters_fr_radiobutton_producer_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:button="@null"
+            android:checked="false"
+            android:drawableRight="@drawable/checkbox_white_selector"
+            android:paddingRight="20dp"
+            android:text="По производителю (Я-А)"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+        <ru.enter.widgets.RadioButtonNormal
+            android:id="@+id/filters_fr_radiobutton_rating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:button="@null"
+            android:checked="false"
+            android:drawableRight="@drawable/checkbox_white_selector"
+            android:paddingRight="20dp"
+            android:text="По рейтингу"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+    </RadioGroup>
+ -->
+    <ru.enter.widgets.TextViewNormal
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Фильтровать по:"
+        android:textColor="#f89b1c"
+        android:textSize="22dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f89b1c" />
+
+</LinearLayout>

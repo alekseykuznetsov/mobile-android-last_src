@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/actionbar_item_main"
+    style="?android:attr/actionButtonStyle"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/actionvar_nav_selector"
+    android:clickable="true"
+    android:duplicateParentState="true"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/actionbar_nav_item_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="8dip"
+        android:src="@drawable/btn_shop_zoom" />
+
+    <TextView
+        android:id="@+id/actionbar_nav_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:text="Enter"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/white" />
+
+</LinearLayout>

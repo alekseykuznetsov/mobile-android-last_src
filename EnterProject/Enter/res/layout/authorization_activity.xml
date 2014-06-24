@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white" >
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/authorization_activity_title_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/checkout_title_background"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:minHeight="40dip"
+            android:text="@string/authorization_activity_title_text"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:background="@drawable/item_gradient_background"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:lines="2"
+                android:text="Чтобы упростить оформление заказа войдите в свой аккаунт"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/authorization_activity_login_et"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:layout_marginTop="10dip"
+                android:hint="Введите логин (почту или телефон)"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:inputType="textEmailAddress"
+                android:textColor="@android:color/black"
+                android:background="@android:drawable/edit_text" />
+
+            <EditText
+                android:id="@+id/authorization_activity_passw_et"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:layout_marginTop="10dip"
+                android:hint="Введите пароль"
+                android:imeOptions="actionDone"
+                android:password="true"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:background="@android:drawable/edit_text" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/authorization_activity_login_b"
+                    style="@style/customButtonBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dip"
+                    android:paddingTop="10dip"
+                    android:text="Войти"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/authorization_activity_remember_passw"
+                    style="@style/customButtonBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:paddingBottom="10dip"
+                    android:paddingTop="10dip"
+                    android:text="Забыли пароль?"
+                    android:textSize="15sp"
+                     />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:background="@drawable/item_gradient_background"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Или зарегистрируйтесь"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_marginBottom="15dip" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/authorization_activity_name_et"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Имя и/или Фамилия"
+                    android:singleLine="true"
+                    android:background="@android:drawable/edit_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/authorization_activity_email_et"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Телефон"
+                    android:inputType="phone"
+                    android:singleLine="true"
+                    android:background="@android:drawable/edit_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/authorization_activity_otpravit2_Button"
+                    style="@style/customButtonBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:paddingBottom="10dip"
+                    android:paddingTop="10dip"
+                    android:text="Отправить"/>
+            </LinearLayout>
+            
+			<Button
+			    android:id="@+id/authorization_activity_continue"
+			    style="@style/customButtonBlack"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:padding="10dip"
+			    android:layout_marginTop="10dp"
+			    android:layout_gravity="center_horizontal"
+			    android:text="Продолжить без регистрации"/>            
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

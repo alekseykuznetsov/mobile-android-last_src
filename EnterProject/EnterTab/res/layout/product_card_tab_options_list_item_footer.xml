@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.enter.widgets.TextViewNormal xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/product_card_tab_description_list_item_footer_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:paddingTop="30dp"
+    android:textColor="#ffffff"
+    android:textSize="20dp" />

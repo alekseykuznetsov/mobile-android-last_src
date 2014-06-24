@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ru.enter.widgets.TextViewNormal
+        android:id="@+id/catalog_fr_grid_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="Не удалось загрузить каталог"
+        android:textColor="@color/list_grey_divider"
+        android:textSize="28sp"
+        android:visibility="gone" />
+
+    <GridView
+        android:id="@+id/catalog_fr_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:horizontalSpacing="30dp"
+        android:listSelector="@drawable/grid_empty_selector"
+        android:numColumns="5"
+        android:overScrollMode="never"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="30dp"
+        android:scrollbars="none"
+        android:verticalSpacing="15dp" />
+
+</FrameLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:background="@android:color/white"
+>
+	<RadioGroup 
+	android:id="@+id/checkout_second_step_payment_methods_ur_rg"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginLeft="10dip"
+	>
+		<RadioButton 
+		android:id="@+id/checkout_second_step_payment_methods_ur_rb1" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:text="Безналичная" 
+		android:textSize="14sp"
+		android:textColor="@android:color/black"
+		android:button="@drawable/radiobutton_background"
+		android:checked="true"
+		/>
+		<RadioButton 
+		android:id="@+id/checkout_second_step_payment_methods_ur_rb2" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:text="Наличная" 
+		android:textSize="14sp"
+		android:textColor="@android:color/black"
+		android:button="@drawable/radiobutton_background"
+		/>
+	</RadioGroup>   
+</LinearLayout>
+

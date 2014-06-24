@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <ru.enter.widgets.TextViewNorma 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="В корзине нет товаров"
+        android:textSize="30dp"
+        android:textColor="#BBBBBB"
+        android:gravity="center"
+        />
+
+</LinearLayout>

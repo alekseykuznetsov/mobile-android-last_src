@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="5dp" >
+
+    <TextView
+        android:id="@+id/shop_list_row_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:maxLines="3"
+        android:paddingLeft="5dp"
+        android:text="ул. Ленина 97 , кв 253" >
+    </TextView>
+
+    <ImageView
+        android:id="@+id/shop_list_row_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/shop_list_row_text_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="5dp"
+        android:text="На витрине" >
+    </TextView>
+
+<!--     <Button
+        android:id="@+id/shop_list_row_button_path"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/selector_btn_orange_solid"
+        android:text="Маршрут"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:visibility="gone" >
+    </Button>
+ -->
+    <Button
+        android:id="@+id/shop_list_row_button_buy"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/selector_btn_orange_solid"
+        android:maxLines="2"
+        android:text="Купить в 1 клик"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:textStyle="bold" >
+    </Button>
+
+</LinearLayout>

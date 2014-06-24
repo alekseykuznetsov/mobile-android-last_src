@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.enter.widgets.TextViewNormal xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/order_merge_spinner_address_text"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:padding="10dp"
+    android:textColor="@color/black"
+    android:textSize="20dp" />

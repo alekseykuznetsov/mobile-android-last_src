@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/catalog_ac_relative_header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/list_grey_divider"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/shop_locator_widget_shops"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/shop_locator_widget_sorts"
+        android:background="@color/list_grey_divider"
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal" >
+
+        <ru.enter.widgets.TextViewBrash
+            android:id="@+id/catalog_ac_txt_shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="73dp"
+            android:layout_marginTop="5dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="Общий каталог"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/catalog_ac_btn_location"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_marginLeft="-63dp"
+            android:background="@drawable/btn_black_square_background"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/icn_map" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/shop_locator_widget_sorts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true" 
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"       
+        android:background="@color/list_grey_divider"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <ru.enter.widgets.SortLabelView
+            android:id="@+id/shop_locator_widget_sorts_by_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"            
+            android:layout_marginTop="5dp"
+             />
+
+        <ru.enter.widgets.SortLabelView
+            android:id="@+id/shop_locator_widget_sorts_by_rat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"            
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp" />
+
+        <ru.enter.widgets.SortLabelView
+            android:id="@+id/shop_locator_widget_sorts_by_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"            
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp" />
+    </LinearLayout>
+
+</RelativeLayout>

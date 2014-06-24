@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- На экране Каталоги, теги с значком закрытия, добавляемые в скролл -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tags_to_delete_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/tags_to_delete_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="TextView"
+        android:textSize="25sp" >
+    </TextView>
+
+    <ImageButton
+        android:id="@+id/tags_to_delete_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/tags_to_delete_text"
+        android:background="@android:color/transparent"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="15dp"
+        android:paddingTop="5dp"
+        android:src="@drawable/pic_del_tag" >
+    </ImageButton>
+
+</RelativeLayout>

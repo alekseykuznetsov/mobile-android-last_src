@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Элемент на экране списка товаров -->
+
+<RelativeLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/back_long"
+    >
+    <ImageView
+    	android:id="@+id/items_list_el_row_img" 
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_centerVertical="true"
+    	android:src="@drawable/icon"/>
+    <LinearLayout 
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_toRightOf="@+id/items_list_el_row_img"
+    	android:layout_centerVertical="true"
+    	android:orientation="vertical"
+    	
+    	>
+	    <TextView
+	        android:id="@+id/items_list_el_row_title" 
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_centerVertical="true"
+	    	android:paddingBottom="20dip"
+	    	android:text="Text"/>
+    	<TextView
+	    	android:id="@+id/items_list_el_row_price"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:text="Picot"/>
+	</LinearLayout>
+
+</RelativeLayout>

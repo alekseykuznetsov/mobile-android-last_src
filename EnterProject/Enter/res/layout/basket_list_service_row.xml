@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/basket_list_service_row_frame"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    >
+
+    <ImageView
+        android:id="@+id/basket_list_service_row_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/pic_f1_new" 
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="10dp"
+        />
+<!-- android:background="@drawable/btn_close_basket_item_background"
+	android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" -->
+    <ImageButton
+        android:id="@+id/basket_list_row_button_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"        
+        android:layout_marginLeft="-5dp"
+        android:layout_marginRight="-5dp"
+        android:layout_marginTop="-10dp"
+        android:layout_marginBottom="-10dp"
+        android:padding="10dp"
+        android:background="@color/transparent" 
+        android:src="@drawable/btn_close_basket_item_background"/>
+
+    <TextView
+        android:id="@+id/basket_list_service_row_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/basket_list_row_button_delete"
+        android:layout_toRightOf="@+id/basket_list_service_row_image"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="10dp"
+        android:text="TextView" />
+
+    <ru.enter.widgets.NumberPicker
+        android:id="@+id/basket_list_service_row_number_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/basket_list_service_row_title"
+        android:layout_below="@+id/basket_list_service_row_title"
+         >
+    </ru.enter.widgets.NumberPicker>
+
+    <TextView
+        android:id="@+id/basket_list_service_row_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:paddingRight="10dp"
+        android:text="TextView" />
+
+</RelativeLayout>

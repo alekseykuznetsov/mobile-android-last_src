@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal" >
+
+            <ru.enter.widgets.TextViewBold
+                android:id="@+id/order_merge_text_label_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Адрес доставки:"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:background="#BBBBBB" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal" >
+
+                <Spinner
+                    android:id="@+id/order_merge_spinner_metro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/order_bg_field_with_arrow"
+                    android:inputType="text"
+                    android:visibility="gone"
+                    android:textColor="#2B4074" />
+
+                <ru.enter.widgets.EditTextNormal
+                    android:id="@+id/order_merge_edittext_address_street"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/product_list_bg_field"
+                    android:hint="Улица"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:nextFocusDown="@+id/order_merge_edittext_address_house"
+                    android:textColor="#2B4074"
+                    android:textColorHint="@color/gray"
+                    android:textCursorDrawable="@null"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <ru.enter.widgets.EditTextNormal
+                        android:id="@+id/order_merge_edittext_address_house"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/product_list_bg_field"
+                        android:hint="Дом"
+                        android:inputType="text"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColor="#2B4074"
+                        android:textColorHint="@color/gray"
+                        android:nextFocusDown="@+id/order_merge_edittext_address_housing"
+                        android:textCursorDrawable="@null"
+                        android:textSize="20dp" />
+
+                    <ru.enter.widgets.EditTextNormal
+                        android:id="@+id/order_merge_edittext_address_housing"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/product_list_bg_field"
+                        android:hint="Корпус"
+                        android:inputType="text"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColor="#2B4074"
+                        android:textColorHint="@color/gray"
+                        android:nextFocusDown="@+id/order_merge_edittext_address_floor"
+                        android:textCursorDrawable="@null"
+                        android:textSize="20dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <ru.enter.widgets.EditTextNormal
+                        android:id="@+id/order_merge_edittext_address_floor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/product_list_bg_field"
+                        android:hint="Этаж"
+                        android:inputType="text"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColor="#2B4074"
+                        android:nextFocusDown="@+id/order_merge_edittext_address_flat"
+                        android:textColorHint="@color/gray"
+                        android:textCursorDrawable="@null"
+                        android:textSize="20dp" />
+
+                    <ru.enter.widgets.EditTextNormal
+                        android:id="@+id/order_merge_edittext_address_flat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/product_list_bg_field"
+                        android:hint="Квартира"
+                        android:inputType="text"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColor="#2B4074"
+                        android:imeOptions="actionDone"
+                        android:textColorHint="@color/gray"
+                        android:textCursorDrawable="@null"
+                        android:textSize="20dp" />
+
+                    <ImageButton
+                        android:id="@+id/order_merge_imagebutton_user_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="#ffffff"
+                        android:src="@drawable/order_btn_city" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="#BBBBBB" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ru.enter.widgets.TextViewBold
+                android:id="@+id/order_merge_text_label_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:text="Выберите дату доставки"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <RelativeLayout
+                android:id="@+id/order_merge_linear_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/order_bg_field_with_arrow" >
+
+                <ru.enter.widgets.TextViewBold
+                    android:id="@+id/order_merge_text_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="Выберите дату"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <ru.enter.widgets.TextViewBold
+                    android:id="@+id/order_merge_text_user_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="#2B4074"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/order_merge_progress_frame_metro"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff"
+        android:clickable="true"
+        android:visibility="gone" >
+
+        <ProgressBar
+            style="@android:style/Widget.ProgressBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminate="true" />
+    </FrameLayout>
+
+</RelativeLayout>

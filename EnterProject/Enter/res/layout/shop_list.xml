@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+в МАГАЗИНАХ
+Нав. бар:
+- Кнопка «Личный кабинет» - переход в личный кабинет (экран 5)
+Рабочая область:
+Заголовок название товара.
+Список магазинов региона, пользователя, с количеством товара в данном
+магазине (в конечном варианте количество должно быть представленно
+ввиде графического обозначения).
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/shop_list_frame"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/shop_list_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gainsboro"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:textStyle="bold" >
+    </TextView>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+
+        <ListView
+            android:id="@+id/shop_list_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none" >
+        </ListView>
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="@style/customProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <GridView
+        android:id="@+id/infoGrid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:horizontalSpacing="20dp"
+        android:numColumns="4"
+        android:overScrollMode="ifContentScrolls"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:scrollbars="none"
+        android:paddingBottom="10dp"
+        android:verticalSpacing="30dp"
+        android:fadingEdge="vertical"
+        android:cacheColorHint="#3563e5" 
+        android:fadingEdgeLength="80dp"/>
+
+</RelativeLayout>

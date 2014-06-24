@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.enter.widgets.TextViewNormal xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/service_left_fr_child_text_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:padding="20dp"
+    android:textColor="#777777"
+    android:textSize="22dp" />

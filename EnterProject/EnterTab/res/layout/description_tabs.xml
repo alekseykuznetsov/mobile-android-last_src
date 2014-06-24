@@ -1,0 +1,44 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp" >
+
+            <RelativeLayout
+                android:id="@+id/mLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true" >
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="160dp" />
+
+                <View
+                    android:id="@+id/line_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_alignBottom="@android:id/tabs"
+                    android:layout_toRightOf="@android:id/tabs"
+                    android:background="@color/list_grey_divider" />
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/mLayout"
+                android:layout_marginBottom="15dp" />
+        </RelativeLayout>
+    </TabHost>
+
+</merge>

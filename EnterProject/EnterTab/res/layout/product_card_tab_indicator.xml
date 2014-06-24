@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.enter.widgets.ButtonNormal xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/product_card_tab_title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/product_card_tab_indicator_button_selector"
+    android:gravity="center"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:textColor="@drawable/product_card_tab_indicator_text_selector"
+    android:textSize="20dp" />

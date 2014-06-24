@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Элемент на экране списка товаров -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="3dip"
+    android:paddingLeft="3dip"
+    android:paddingBottom="3dip" 
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/product_list_el_grid_img"
+        android:layout_width="90dip"
+        android:layout_height="90dip"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="4dp"
+        android:background="@drawable/product_card_image_background"
+        android:src="@drawable/cap" />
+    
+    <ImageView 
+        android:id="@+id/product_list_el_grid_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="3dip"
+        android:background="@drawable/pic_arrow"/>
+
+    <TextView
+        android:id="@+id/product_list_el_grid_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dip"
+        android:layout_marginRight="3dip"
+        android:layout_toRightOf="@id/product_list_el_grid_img"
+        android:layout_toLeftOf="@+id/product_list_el_grid_arrow"
+        android:maxLines="3"
+        android:text="Text"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/product_list_el_grid_price_symbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/product_list_el_grid_price"
+        android:layout_toRightOf="@+id/product_list_el_grid_price"
+        android:textSize="16sp"
+        android:layout_marginRight="3dip"
+        android:textColor="#ff9d19"
+        android:text="P"
+        />
+    
+
+    <TextView
+        android:id="@+id/product_list_el_grid_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/product_list_el_grid_img"
+        android:layout_toRightOf="@+id/product_list_el_grid_img"
+        android:layout_marginLeft="3dip"
+        android:textColor="#ff9d19"
+        android:text="30 000"
+        android:textSize="16sp"
+        />
+    
+
+     <TextView
+        android:id="@+id/product_list_el_grid_old_price_symbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/product_list_el_grid_old_price"
+        android:layout_toRightOf="@+id/product_list_el_grid_old_price"
+        android:textSize="10sp"
+        android:text=" p"
+        android:layout_marginRight="3dip"
+        android:textColor="@color/gray"
+        android:visibility="gone"
+        />
+    
+    <TextView
+        android:id="@+id/product_list_el_grid_old_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/product_list_el_grid_price"
+        android:layout_toRightOf="@+id/product_list_el_grid_img"
+        android:layout_marginLeft="3dp"
+        android:paddingLeft="3dp"
+        android:textColor="@color/gray"
+        android:visibility="gone"
+        android:textSize="10sp"
+        android:layout_marginTop="3dp"
+        />
+    
+      <TextView
+        android:id="@+id/product_list_el_grid_discount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/product_list_el_grid_old_price"
+        android:layout_toRightOf="@+id/product_list_el_grid_old_price_symbol"
+        android:layout_marginLeft="3dip"
+        android:textColor="@color/gray"
+        android:visibility="gone"
+        android:textSize="10sp"
+        />
+    
+    <TextView
+        android:id="@+id/product_list_el_grid_exist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/product_list_el_grid_img"
+        android:layout_toRightOf="@+id/product_list_el_grid_price_symbol"     
+        android:layout_toLeftOf="@+id/product_list_el_grid_arrow"  
+        android:layout_marginLeft="3dip"
+        android:layout_marginRight="3dip"
+        android:singleLine="true"
+        android:gravity="right"
+        android:text="наличие"
+        android:textColor="#797979"
+        android:textSize="10sp" />
+
+    <ImageView
+        android:id="@+id/product_list_el_grid_option"
+        android:layout_width="80dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dip" />
+
+</RelativeLayout>

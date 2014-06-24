@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="5dip"
+    android:orientation="horizontal" >
+
+    <CheckBox
+        android:id="@+id/shop_list_row_adress_w_check"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:button="@drawable/checkbox_background"
+        android:maxLines="3"
+        android:layout_weight="1"
+        android:text="ул. Ленина 97 , кв 253" >
+    </CheckBox>
+
+    <TextView
+        android:id="@+id/shop_list_row_distance_w_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@android:color/darker_gray" />
+
+</LinearLayout>

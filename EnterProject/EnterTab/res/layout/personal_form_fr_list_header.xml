@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ru.enter.widgets.TextViewBold
+        android:id="@+id/personal_form_fr_label_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Имя:"
+        android:textSize="22dp"
+        android:textColor="@color/black"/>
+
+    <ru.enter.widgets.TextViewNormal
+        android:id="@+id/personal_form_fr_text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/personal_form_fr_label_name"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/personal_form_fr_label_name"
+        android:textColor="@color/black"
+        android:textSize="22dp" />
+
+    <ru.enter.widgets.TextViewBold
+        android:id="@+id/personal_form_fr_label_mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/personal_form_fr_label_name"
+        android:layout_marginTop="10dp"
+        android:text="Телефон:"
+        android:textSize="22dp"
+        android:textColor="@color/black" />
+
+    <ru.enter.widgets.TextViewNormal
+        android:id="@+id/personal_form_fr_text_mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/personal_form_fr_label_name"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/personal_form_fr_label_mobile"
+        android:textColor="@color/black"
+        android:textSize="22dp" />
+
+    <ru.enter.widgets.TextViewBold
+        android:id="@+id/personal_form_fr_label_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/personal_form_fr_label_mobile"
+        android:layout_marginTop="10dp"
+        android:text="Email:"
+        android:textSize="22dp"
+        android:textColor="@color/black"/>
+
+    <ru.enter.widgets.TextViewNormal
+        android:id="@+id/personal_form_fr_text_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/personal_form_fr_label_mobile"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/personal_form_fr_label_email"
+        android:textColor="@color/black"
+        android:textSize="22dp" />
+
+    <ru.enter.widgets.TextViewBold
+        android:id="@+id/personal_form_fr_label_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/personal_form_fr_text_email"
+        android:background="@drawable/persona_order_bg_label_field"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Адреса доставки"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignBottom="@id/personal_form_fr_label_address"
+        android:layout_toRightOf="@id/personal_form_fr_label_address"
+        android:background="#000000" />
+    
+</RelativeLayout>

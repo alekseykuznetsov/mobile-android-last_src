@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp" >
+
+    <ImageView
+        android:id="@+id/product_card_tab_service_list_item_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true" />
+
+    <LinearLayout
+        android:id="@+id/product_card_tab_service_list_item_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/price_button_block"
+        android:layout_toRightOf="@+id/product_card_tab_service_list_item_image"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <ru.enter.widgets.TextViewNormal
+            android:id="@+id/product_card_tab_service_list_item_text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#5EBEE6"
+            android:textSize="20dp" />
+
+        <ru.enter.widgets.TextViewNormal
+            android:id="@+id/product_card_tab_service_list_item_text_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffffff"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/price_button_block"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true" >
+
+        <ru.enter.widgets.TextViewNormal
+            android:id="@+id/product_card_tab_service_list_item_text_ruble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="#ffffff"
+            android:textSize="26dp" />
+
+        <ru.enter.widgets.TextViewBold
+            android:id="@+id/product_card_tab_service_list_item_text_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/product_card_tab_service_list_item_text_ruble"
+            android:layout_toLeftOf="@id/product_card_tab_service_list_item_text_ruble"
+            android:textColor="#ffffff"
+            android:textSize="26dp" />
+
+        <ru.enter.widgets.ButtonNormal
+            android:id="@+id/product_card_tab_service_list_item_button_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/product_card_tab_service_list_item_text_ruble"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/selector_btn_stroke"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:text="@string/buy_service"
+            android:textColor="#ffffff"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

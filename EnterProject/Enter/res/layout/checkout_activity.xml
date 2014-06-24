@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:focusable="true"
+android:focusableInTouchMode="true"
+android:background="@android:color/white"
+>
+	<ViewAnimator
+	android:id="@+id/checkout_activity_viewanimator"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"	
+	android:layout_weight="1"
+	/>
+</LinearLayout>

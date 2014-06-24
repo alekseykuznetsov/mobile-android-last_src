@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="white">#ffffff</color>
+	<color name="black">#000000</color>
+	<color name="red">#ff0000</color>
+	<color name="gray">#454545</color>
+	<color name="dark_gray">#A9A9A9</color>
+	<color name="silver">#C0C0C0</color>
+	<color name="light_gray">#D3D3D3</color>
+	<color name="gainsboro">#DCDCDC</color>
+	<color name="grey51">#E0E0E0</color>
+	<color name="white_smoke">#F5F5F5</color>
+	<color name="transparent">#00FFFFFF</color>
+	<color name="news_tab_list_row_color_gray">#f2f2f2</color>
+	<color name="light_gray_color">#ffcccccc</color>
+	<color name="ghost_white">#F8F8FF</color>
+	<color name="news_tab_list_footer_color">#808080</color>
+	<color name="article_button_gray">#828282</color>
+	<color name="article_button_gray_click">#818385</color>
+	<color name="article_button_gray_inactive">#919394</color>
+	
+	<drawable name="screen_background_black">#ff000000</drawable>
+    <drawable name="translucent_background">#e0000000</drawable>
+    <drawable name="transparent_background">#00000000</drawable>
+    <color name="main_title">#701c1f</color>
+    <color name="orange_news_title">#ff6600</color>
+    <color name="about_bank_gray">#5e5e5e</color>
+    <color name="orange_title_theme">#ff6600</color>
+    <color name="orange_catalog">#fbae3b</color>
+    <color name="green_catalog">#70e33d</color>
+    <color name="blue_catalog">#36d7ff</color>
+    <color name="gray_tags">#939393</color>
+    <color name="checkout_title_background">#2a2a2a</color>
+    <color name="checkout_gray_background">#e1e1e1</color>
+    
+</resources>

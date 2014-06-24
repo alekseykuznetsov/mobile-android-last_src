@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/filters_fr_linear_full_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2.5"
+        android:background="#D9000000"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+            
+            <ExpandableListView
+                android:id="@+id/filters_fr_explist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/filters_fr_linear_buttons"
+                android:divider="#323232"
+                android:dividerHeight="1dp"
+                android:groupIndicator="@null"
+                android:scrollbars="none" >
+            </ExpandableListView>
+
+            <LinearLayout
+                android:id="@+id/filters_fr_linear_buttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal" >
+
+                <ru.enter.widgets.ButtonNormal
+                    android:id="@+id/filters_fr_button_clear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_btn_solid_grey"
+                    android:text="Очистить"
+                    android:textColor="#ffffff"
+                    android:textSize="18dp" />
+
+                <ru.enter.widgets.ButtonNormal
+                    android:id="@+id/filters_fr_button_apply"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:background="@drawable/selector_btn_solid_orange"
+                    android:text="Применить"
+                    android:textColor="#ffffff"
+                    android:textSize="18dp" />
+            </LinearLayout>
+            
+              <FrameLayout
+                android:id="@+id/filters_fr_progress_frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#B9000000"
+                android:clickable="true"
+                android:visibility="gone" >
+
+                <ProgressBar
+                    style="@android:style/Widget.ProgressBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+            </FrameLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

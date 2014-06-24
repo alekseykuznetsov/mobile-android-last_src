@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Элемент на экране списка товаров -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/back_catalog"
+    android:paddingTop="3dip"
+    android:paddingLeft="3dip"
+    android:paddingBottom="3dip" >
+
+    <ImageView
+        android:id="@+id/items_list_el_grid_img"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="4dp"
+        android:background="@drawable/product_card_image_background"
+        android:src="@drawable/cap" />
+
+    <TextView
+        android:id="@+id/items_list_el_grid_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dip"
+        android:layout_marginRight="3dip"
+        android:layout_toRightOf="@id/items_list_el_grid_img"
+        android:maxLines="3"
+        android:text="Text"
+        android:textSize="9sp" />
+
+    <TextView
+        android:id="@+id/items_list_el_grid_price_symbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/items_list_el_grid_exist"
+        android:layout_alignParentRight="true"
+        android:textSize="11sp"
+        android:layout_marginRight="3dip"
+        android:text="P"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/items_list_el_grid_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/items_list_el_grid_price_symbol"
+        android:layout_toLeftOf="@id/items_list_el_grid_price_symbol"
+        android:text="30 000"
+        android:textSize="11sp"
+        android:textStyle="bold" />
+    
+    <TextView
+        android:id="@+id/items_list_el_grid_exist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/items_list_el_grid_img"
+        android:layout_alignLeft="@id/items_list_el_grid_title"
+        android:layout_alignRight="@id/items_list_el_grid_price_symbol"
+        android:singleLine="true"
+        android:gravity="right"
+        android:text="наличие"
+        android:textSize="8sp" />
+
+    <ImageView
+        android:id="@+id/items_list_el_grid_option"
+        android:layout_width="40dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dip" />
+
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_zoom"
+        android:icon="@drawable/icn_actionbar_items2"
+        android:showAsAction="always"
+        android:orderInCategory="2"
+        android:title="Сетка">
+        <menu>
+            <item
+                android:id="@+id/menu_zoom2"
+                android:icon="@drawable/icn_actionbar_items2"
+                android:showAsAction="ifRoom|withText"
+                android:title="Крупная сетка">
+            </item>
+            <item
+                android:id="@+id/menu_zoom4"
+                android:icon="@drawable/icn_actionbar_items4"
+                android:showAsAction="ifRoom|withText"
+                android:title="Средняя сетка">
+            </item>
+            <item
+                android:id="@+id/menu_zoom9"
+                android:icon="@drawable/icn_actionbar_items9"
+                android:showAsAction="ifRoom|withText"
+                android:title="Мелкая сетка">
+            </item>
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- окно с тегами разделенные на категории (в этом окне есть возможность
+применить выбранные теги, очистить и закрыть окно с тегами) -->
+
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+    <RelativeLayout 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:background="@drawable/tabbar"
+	>
+        <Button 
+        android:text="Применить" 
+        android:id="@+id/filters_list_button_apply" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/btn_orange_background"
+        android:textColor="@color/white"
+        android:layout_marginLeft="10dp"
+        android:textSize="12sp"
+        android:layout_centerVertical="true"
+        >
+        </Button>
+        <Button 
+        android:text="Очистить" 
+        android:id="@+id/filters_list_button_clear" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/filters_list_button_cancel" 
+        android:background="@drawable/btn_orange_background"
+        android:textColor="@color/white"
+        android:layout_marginRight="5dp"
+        android:textSize="12sp"
+        android:layout_centerVertical="true"
+        >
+        </Button>
+        <Button 
+        android:text="Отмена" 
+        android:id="@+id/filters_list_button_cancel" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/btn_orange_background"
+        android:textColor="@color/white"
+        android:layout_marginRight="10dp"
+        android:textSize="12sp"
+        android:layout_centerVertical="true"
+        >
+        </Button>
+    </RelativeLayout>
+    <FrameLayout 
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent" 
+    >
+        <TextView 
+            android:id="@android:id/empty"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:visibility="gone"           
+            />
+	    <ExpandableListView 
+	    android:layout_height="fill_parent"
+	    android:layout_width="fill_parent" 
+	    android:id="@android:id/list"
+	    android:choiceMode="multipleChoice" 
+	    android:divider="@color/transparent"
+	    android:fadingEdge="none">
+	    </ExpandableListView>
+     	<ProgressBar 
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:layout_gravity="center" 
+	    android:id="@+id/filters_list_progress"
+	    android:indeterminateDrawable="@drawable/progress_spin"/>
+    </FrameLayout>
+    
+</LinearLayout>

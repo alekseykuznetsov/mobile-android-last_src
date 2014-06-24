@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:paddingBottom="25dp" >
+
+    <ru.enter.widgets.IndicatorViewPager
+        android:id="@+id/main_ac_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <ru.enter.widgets.ButtonBrash
+                android:id="@+id/main_ac_button_catalog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_btn_catalog"
+                android:text="Каталог"
+                android:textColor="#ffffff"
+                android:textSize="28dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <ru.enter.widgets.ButtonBrash
+                android:id="@+id/main_ac_button_personal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_btn_personal"
+                android:text="Мой кабинет"
+                android:textColor="#ffffff"
+                android:textSize="28dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <ru.enter.widgets.ButtonBrash
+                android:id="@+id/main_ac_button_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_btn_search"
+                android:text="Поиск"
+                android:textColor="#ffffff"
+                android:textSize="28dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <ru.enter.widgets.ButtonBrash
+                android:id="@+id/main_ac_button_shops"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_btn_shops"
+                android:text="Магазины"
+                android:textColor="#ffffff"
+                android:textSize="28dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ru.enter.widgets.ButtonBrash
+                    android:id="@+id/main_ac_button_basket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/main_btn_basket"
+                    android:text="Корзина"
+                    android:textColor="#ffffff"
+                    android:textSize="28dp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true" >
+
+                    <ImageView
+                        android:id="@+id/main_ac_image_basket_empty_field_port"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/empty_view" />
+
+                    <ru.enter.widgets.TextViewBrash
+                        android:id="@+id/main_ac_txt_basket_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/main_ac_image_basket_empty_field_port"
+                        android:layout_toRightOf="@id/main_ac_image_basket_empty_field_port"
+                        android:background="@drawable/bg_label_basket_price"
+                        android:gravity="center"
+                        android:paddingLeft="7dp"
+                        android:paddingRight="7dp"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+<!-- 
+            <ru.enter.widgets.ButtonBrash
+                android:id="@+id/main_ac_button_services"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_btn_services"
+                android:text="Сервисы"
+                android:textColor="#ffffff"
+                android:textSize="28dp" />
+                 -->
+            <ru.enter.widgets.ButtonBrash
+                android:id="@+id/main_ac_button_scaner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_btn_scaner"
+                android:text="Сканер"
+                android:textColor="#ffffff"
+                android:textSize="28dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp" >
+<!-- 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <ru.enter.widgets.ButtonBrash
+                android:id="@+id/main_ac_button_scaner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_btn_scaner"
+                android:text="Сканер"
+                android:textColor="#ffffff"
+                android:textSize="28dp" />
+                 -->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <ru.enter.widgets.ButtonBrash
+                android:id="@+id/main_ac_button_about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_btn_about"
+                android:text="О компании"
+                android:textColor="#ffffff"
+                android:textSize="28dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <ru.enter.widgets.ButtonBrash
+                android:id="@+id/main_ac_button_feedback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_btn_feedback"
+                android:text="Обратная связь"
+                android:textColor="#ffffff"
+                android:textSize="28dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

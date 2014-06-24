@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Элемент списка Мои Заказы в Личном кабинете. Верхний список -->
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:padding="10dp">
+    <TextView 
+    android:layout_height="wrap_content" 
+    android:layout_width="wrap_content" 
+    android:layout_alignParentLeft="true" 
+    android:id="@+id/personal_acc_my_orders_list_row_date">
+    </TextView>
+    <TextView 
+    android:layout_height="wrap_content" 
+    android:layout_width="wrap_content" 
+    android:textStyle="bold"
+    android:layout_below="@+id/personal_acc_my_orders_list_row_date" 
+    android:id="@+id/personal_acc_my_orders_list_row_number" 
+    >
+    </TextView>
+    <ImageView 
+    android:src="@drawable/pic_arrow" 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:id="@+id/personal_acc_my_orders_list_row_arrow"
+    android:layout_centerVertical="true" 
+    android:layout_alignParentRight="true"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="10dp"
+    >
+    </ImageView>
+    <TextView 
+    android:layout_height="wrap_content" 
+    android:layout_width="wrap_content" 
+    android:textStyle="bold"
+    android:layout_toLeftOf="@+id/personal_acc_my_orders_list_row_arrow" 
+    android:id="@+id/personal_acc_my_orders_list_row_status" 
+    android:layout_centerVertical="true"
+    android:maxWidth="120dp"
+    android:gravity="center"
+	>
+    </TextView>
+
+</RelativeLayout>

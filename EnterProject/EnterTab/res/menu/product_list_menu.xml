@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/product_list_filter"
+          android:icon="@drawable/icn_actionbar_menu_filters"
+          android:title="Фильтры"
+          android:showAsAction="always|withText" />
+</menu>
+
+
+<!--  android:onClick="onFilterShow"
+ -->

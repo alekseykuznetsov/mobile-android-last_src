@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:background="@android:color/white"
+>
+    checkout_second_step_organization_data
+	<TextView 
+	android:text="Данные об организации" 
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content" 
+	android:textStyle="bold"
+	android:textSize="20sp"
+	android:textColor="@android:color/black"
+	android:background="@color/checkout_gray_background"
+	android:paddingTop="5dip"
+	android:paddingBottom="5dip"
+	android:paddingLeft="10dip"
+	/>
+	<LinearLayout 
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:background="@drawable/item_gradient_background"
+	android:layout_marginLeft="3dip"
+	android:layout_marginRight="3dip"
+	android:layout_marginTop="3dip"
+	android:paddingLeft="3dip"
+	android:paddingRight="3dip"
+	>
+		<EditText
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/checkout_second_step_organization_data_name_organization_edit_text"
+		android:hint="Полное название организации"
+		android:layout_marginTop="5dp"
+		/>	
+		<EditText
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/checkout_second_step_organization_data_inn_edit_text"
+		android:hint="ИНН"
+		android:layout_marginTop="5dp"
+		android:inputType="numberSigned"
+		/>
+		<EditText
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/checkout_second_step_organization_data_adress_edit_text"
+		android:hint="Юр.адрес. Название улицы"
+		android:layout_marginTop="5dp"
+		/>	
+		<LinearLayout 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation= "horizontal"
+		android:layout_marginTop="5dp"
+		>
+			<EditText
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:id="@+id/checkout_second_step_organization_data_home_edit_text"
+			android:hint="Дом"
+			/>	
+			<TextView 
+			android:text="/" 
+			android:layout_height="wrap_content" 
+			android:layout_width="wrap_content" 
+			android:textSize="15sp"
+			android:textColor="@android:color/black"
+			android:layout_marginLeft="2dip"
+			android:layout_marginRight="2dip"
+			/>
+			<EditText
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:id="@+id/checkout_second_step_organization_data_str_edit_text"
+			android:hint="Стр."
+			/>
+			<TextView 
+			android:text="/" 
+			android:layout_height="wrap_content" 
+			android:layout_width="wrap_content" 
+			android:textSize="15sp"
+			android:textColor="@android:color/black"
+			android:layout_marginLeft="2dip"
+			android:layout_marginRight="2dip"
+			/>				
+			<EditText
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:id="@+id/checkout_second_step_organization_data_ofice_edit_text"
+			android:hint="Офис"
+			/>
+		</LinearLayout>	
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/dropdown_ic_arrow_grey_for_text"
+    android:drawableLeft="@drawable/icn_actionbar_filters"
+    android:drawablePadding="10dp"
+    android:gravity="center_vertical"
+    android:padding="10dp"
+    android:text="Фильтры"
+    android:textColor="@color/white"
+    android:textSize="20dp" />

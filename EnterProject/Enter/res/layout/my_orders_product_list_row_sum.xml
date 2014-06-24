@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/item_gradient_background"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/orders_sum_product_label_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="Итого товаров:" />
+
+    <TextView
+        android:id="@+id/orders_sum_product_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/orders_sum_product_label_count"
+        android:layout_toRightOf="@id/orders_sum_product_label_count"
+        android:gravity="left"
+        android:paddingLeft="10dp"
+        android:text="2 шт."
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/orders_sum_product_sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/orders_sum_product_label_count"
+        android:layout_toLeftOf="@+id/orders_sum_product_rouble"
+        android:gravity="right"
+        android:text="26 000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/orders_sum_product_rouble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/orders_sum_product_label_count"
+        android:layout_alignParentRight="true"
+        android:maxLength="15"
+        android:text=" p"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/orders_sum_service_label_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/orders_sum_product_label_count"
+        android:gravity="right"
+        android:text="Итого услуг:" />
+
+    <TextView
+        android:id="@+id/orders_sum_service_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/orders_sum_service_label_count"
+        android:layout_toRightOf="@+id/orders_sum_service_label_count"
+        android:gravity="left"
+        android:paddingLeft="10dp"
+        android:text="2 шт."
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/orders_sum_service_sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/orders_sum_service_label_count"
+        android:layout_toLeftOf="@+id/orders_sum_service_rouble"
+        android:gravity="right"
+        android:text="26 000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/orders_sum_service_rouble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/orders_sum_service_label_count"
+        android:layout_alignParentRight="true"
+        android:maxLength="15"
+        android:text=" p"
+        android:textStyle="bold" />
+    
+    <!-- delivery -->
+
+	 <TextView
+        android:id="@+id/orders_delivery_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/orders_sum_service_label_count"
+        android:layout_alignParentLeft="true"
+        android:text="Доставка:" />
+
+    <TextView
+        android:id="@+id/orders_delivery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/orders_delivery_label"
+        android:layout_toLeftOf="@+id/orders_delivery_rouble"
+        android:paddingLeft="10dp"
+        android:text="26 000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/orders_delivery_rouble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/orders_delivery_label"
+        android:layout_alignParentRight="true"
+        android:maxLength="15"
+        android:text=" p"
+        android:textStyle="bold" />
+
+	<!-- delivery  -->
+	
+    <TextView
+        android:id="@+id/orders_sum_all_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/orders_delivery_label"
+        android:layout_toLeftOf="@+id/orders_sum_all"
+        android:text="Итого:" />
+
+    <TextView
+        android:id="@+id/orders_sum_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/orders_sum_all_label"
+        android:layout_toLeftOf="@+id/orders_sum_all_rouble"
+        android:paddingLeft="10dp"
+        android:text="26 000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/orders_sum_all_rouble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/orders_sum_all_label"
+        android:layout_alignParentRight="true"
+        android:maxLength="15"
+        android:text=" p"
+        android:textStyle="bold" />
+
+</RelativeLayout>

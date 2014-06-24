@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:panel="http://schemas.android.com/apk/res/ru.enter"
+android:layout_width="fill_parent" 
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:gravity="center_vertical"
+android:background="@drawable/tabbar"
+>
+	<ru.enter.widgets.Panel
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content" 
+	android:layout_gravity="left"
+	panel:handle="@+id/handle"
+	panel:content="@+id/content"
+	panel:position="left"
+	panel:animationDuration="500"
+    panel:linearFlying="true"
+    panel:openedHandle="@drawable/pic_arrow_2"
+    panel:closedHandle="@drawable/btn_enter"
+	>	
+		<ImageButton
+		android:id="@+id/handle"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_vertical"
+		android:minWidth="11dip"
+		/>
+		<HorizontalScrollView 
+		android:id="@+id/content"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:scrollbars="none"
+		android:gravity="center"
+		>
+			<LinearLayout
+			android:id="@+id/slider_menu_ll"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			/>
+		</HorizontalScrollView>
+	</ru.enter.widgets.Panel>
+</LinearLayout>

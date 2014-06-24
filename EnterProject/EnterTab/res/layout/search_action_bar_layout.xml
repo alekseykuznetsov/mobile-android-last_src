@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <EditText
+        android:id="@+id/search_action_bar_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_action_search"
+        android:drawableRight="@drawable/cities_icn_x"
+        android:background="@drawable/cities_bg_textfield"
+        android:drawablePadding="15dp"
+        android:hint="Найти"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
+        android:ems="10"
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:paddingRight="10dp" >
+    </EditText>
+    
+    
+    
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Комментарии, строчка листа в личном кабинете -->
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  >
+    <TextView 
+    android:text="Samsung GALAXY-S" 
+    android:id="@+id/personal_acc_comments_list_row_theme" 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    android:background="#939393"
+    android:textColor="@color/black"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+    </TextView>
+    <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+    <TextView 
+    android:text="Екатерина(29.06.11)" 
+    android:id="@+id/personal_acc_comments_list_row_name" 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    android:layout_weight="1">
+    </TextView>
+    <ImageButton 
+    android:layout_width="wrap_content" 
+    android:id="@+id/personal_acc_comments_list_row_edit" 
+    android:background="@drawable/btn_adr_edit_background" 
+    android:layout_height="wrap_content">
+    </ImageButton>
+    <ImageButton 
+    android:layout_width="wrap_content" 
+    android:id="@+id/personal_acc_comments_list_row_delete" 
+    android:background="@drawable/btn_adr_del_background" 
+    android:layout_height="wrap_content">
+    </ImageButton>
+    </LinearLayout>
+    <TextView android:text="Комментарии, когторые оставили другие пользователи на отзыв владельца
+							приложения.
+							- Указание товара для которого был оставлен отзыв,
+							- Никнейм пользователя, дата добавления комментария
+							- Текст отзыва/комментария" 
+    android:id="@+id/personal_acc_comments_list_row_text" 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+    </TextView>
+    
+</LinearLayout>

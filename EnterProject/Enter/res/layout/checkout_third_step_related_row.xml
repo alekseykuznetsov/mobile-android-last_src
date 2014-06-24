@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp" >
+
+    <ImageView
+        android:id="@+id/checkout_third_step_related_row_image"
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/pic_f1_new" />
+
+    <TextView
+        android:id="@+id/checkout_third_step_related_row_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/checkout_third_step_related_row_image"/>
+
+    <TextView
+        android:id="@+id/tmp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/checkout_third_step_related_row_title"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/checkout_third_step_related_row_image"
+        android:gravity="bottom"
+        android:text="Количество: " />
+
+    <TextView
+        android:id="@+id/checkout_third_step_related_row_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/checkout_third_step_related_row_title"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/tmp"
+        android:gravity="bottom"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/checkout_third_step_related_row_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/checkout_third_step_related_row_title"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:gravity="bottom"/>
+
+</RelativeLayout>

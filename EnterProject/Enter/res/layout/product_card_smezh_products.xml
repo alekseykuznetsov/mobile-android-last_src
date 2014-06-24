@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gainsboro"
+        android:paddingLeft="10dp"
+        android:text="Смежные товары"
+        android:textColor="@color/black"
+        android:textSize="16dip" >
+    </TextView>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/product_card_smezh_tov_view"
+        android:layout_width="fill_parent"
+        android:layout_height="100dip" />
+
+    <ru.enter.widgets.Dots
+        android:id="@+id/product_card_smezh_tov_view_indicator"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:background="@android:color/white"
+android:paddingBottom="10dip"
+>	
+	<TextView 
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:text="Выберите магазин из списка или воспользуйтесь геолокацией для поиска ближайшего магазина" 
+	android:layout_gravity="center"
+	android:textSize="15sp"
+	android:textColor="@android:color/black"
+	android:layout_marginLeft="5dp"
+	android:gravity="center_horizontal"
+	/>
+	<EditText
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:id="@+id/checkout_second_step_geo_address_edit"
+		android:singleLine="true"
+		android:layout_marginTop="10dip"
+		android:layout_marginBottom="10dip"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		/>
+	<LinearLayout 
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:gravity="center_horizontal"
+	>	
+		<Button
+		android:id="@+id/checkout_second_step_geo_choose_shop_b" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Выбрать магазин"
+		style="@style/customButtonBlack"
+		/>
+		<Button
+		android:id="@+id/checkout_second_step_geo_geolocation_b" 
+		android:text="Геолокация" 
+		android:layout_height="wrap_content" 
+		android:layout_width="wrap_content" 
+		style="@style/customButtonBlack"
+		android:layout_marginLeft="25dip"	
+		/>
+	</LinearLayout>
+		<View 
+	    android:layout_marginTop="10dp"
+	    android:layout_marginBottom="10dp"
+		android:layout_width="fill_parent"
+		android:layout_height="3px"
+		android:background="#ababab"
+		/>
+
+		<TextView
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:text="Выберите дату доставки: "
+		    android:gravity="center_horizontal"
+		    android:textStyle="bold"
+			android:textColor="@android:color/black"
+		    android:layout_marginBottom="10dp"/>
+
+		<Spinner
+		    android:id="@+id/checkout_second_step_geo_spinner"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content" 
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginRight="10dp">
+
+		    <requestFocus />
+		</Spinner>
+
+</LinearLayout>

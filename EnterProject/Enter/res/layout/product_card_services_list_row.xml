@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dp" 
+    android:descendantFocusability="blocksDescendants"   >
+
+    <ImageView
+        android:id="@+id/product_card_services_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/cap"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:id="@+id/product_card_services_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/product_card_services_image"
+        android:layout_toRightOf="@+id/product_card_services_image"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/product_card_services_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/product_card_services_image"
+        android:layout_toRightOf="@+id/product_card_services_image"
+        android:text="TextView" 
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/product_card_services_ruble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/product_card_services_price"
+        android:layout_toRightOf="@+id/product_card_services_price"
+        android:textSize="18sp"
+        android:text=" p" />
+
+    <Button
+        android:id="@+id/product_card_services_button_buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/btn_orange_background"
+        android:textColor="@color/white"
+        android:padding="3dp"
+        android:text="Купить услугу" />
+
+</RelativeLayout>

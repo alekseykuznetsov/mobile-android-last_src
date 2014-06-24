@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:padding="20dp" >
+
+        <EditText
+            android:id="@+id/personal_dialog_address_edittext_street"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/product_list_bg_field"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="Улица"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/personal_dialog_address_edittext_house"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/product_list_bg_field"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:hint="Дом"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/personal_dialog_address_edittext_housing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/product_list_bg_field"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:hint="Корпус"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/personal_dialog_address_edittext_floor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/product_list_bg_field"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:hint="Этаж"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/personal_dialog_address_edittext_flat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/product_list_bg_field"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:hint="Квартира"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/personal_dialog_address_button_send"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.9"
+                android:background="@drawable/selector_btn_solid_orange"
+                android:shadowColor="#000000"
+                android:shadowDx="0"
+                android:shadowDy="-1"
+                android:shadowRadius="1"
+                android:text="Добавить"
+                android:textColor="#ffffff"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/personal_dialog_address_progress_frame"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="#B9000000"
+        android:clickable="true"
+        android:visibility="gone" >
+
+        <ProgressBar
+            style="@android:style/Widget.ProgressBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+</RelativeLayout>

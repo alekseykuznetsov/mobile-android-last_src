@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingBottom="3dip"
+    android:paddingLeft="3dip"
+    android:paddingTop="3dip" >
+
+    <ImageView
+        android:id="@+id/banner_list_row_image"
+        android:layout_width="90dip"
+        android:layout_height="90dip"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="4dp"
+        android:background="@drawable/product_card_image_background"
+        android:src="@drawable/cap" />
+    
+    <ImageView 
+        android:id="@+id/banner_list_row_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="3dip"
+        android:background="@drawable/pic_arrow"/>
+
+    <TextView
+        android:id="@+id/banner_row_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dip"
+        android:layout_marginRight="3dip"
+        android:layout_toRightOf="@id/banner_list_row_image"
+        android:layout_toLeftOf="@+id/banner_list_row_arrow"
+        android:maxLines="3"
+        android:text="Text"
+        android:textSize="15sp" />
+    <TextView
+        android:id="@+id/banner_row_price_sym"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/banner_list_row_image"
+        android:layout_toRightOf="@+id/banner_row_price"
+        android:textSize="16sp"
+        android:layout_marginRight="3dip"
+        android:textColor="#ff9d19"
+        android:text="P" />
+    
+    <TextView
+        android:id="@+id/banner_row_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/banner_row_price_sym"
+        android:layout_toRightOf="@+id/banner_list_row_image"
+        android:layout_marginLeft="3dip"
+        android:textColor="#ff9d19"
+        android:text="30 000"
+        android:textSize="16sp" />
+    
+    <TextView
+        android:id="@+id/banner_row_old_price_symbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/banner_row_old_price"
+        android:layout_toRightOf="@+id/banner_row_old_price"
+        android:textSize="12sp"
+        android:layout_marginRight="3dip"
+        android:textColor="@color/gray"
+        android:visibility="gone"
+        android:text=" p"
+        />
+    
+    <TextView
+        android:id="@+id/banner_row_old_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/banner_row_price"
+        android:layout_toRightOf="@+id/banner_list_row_image"
+        android:layout_marginLeft="3dip"
+        android:textColor="@color/gray"
+        android:visibility="gone"
+        android:textSize="12sp"
+        />
+    
+      <TextView
+        android:id="@+id/banner_row_discount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/banner_row_old_price"
+        android:layout_toRightOf="@+id/banner_row_old_price_symbol"
+        android:layout_marginLeft="3dip"
+        android:textColor="@color/gray"
+        android:visibility="gone"
+        android:textSize="12sp"
+        />
+    
+
+    <TextView
+        android:id="@+id/banner_row_exist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/banner_list_row_image"
+        android:layout_toRightOf="@+id/banner_row_price_sym"      
+        android:layout_toLeftOf="@+id/banner_list_row_arrow"
+        android:layout_marginLeft="3dip"
+        android:layout_marginRight="3dip"
+        android:singleLine="true"
+        android:gravity="right"
+        android:text="наличие"
+        android:textColor="#797979"
+        android:textSize="10sp" />
+    
+    <ImageView
+        android:id="@+id/banner_list_row_option"
+        android:layout_width="80dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dip" />
+
+    
+</RelativeLayout>

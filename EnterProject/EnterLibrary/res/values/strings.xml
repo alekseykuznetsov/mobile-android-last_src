@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Enter</string>
+    <string name="personal_account_activity_title_text">Личный кабинет</string>
+    <string name="personal_account_activity_button1_text">Мои заказы</string>
+    <string name="personal_account_activity_button2_text">Анкета</string>
+    <string name="personal_account_activity_button3_text">Wish List</string>
+    <string name="personal_account_activity_button4_text">Комментарии</string>
+    <string name="personal_account_activity_button5_text">Сообщения</string>
+    <string name="personal_account_activity_my_orders_listview_title_text">Состав заказа</string>
+
+    <string name="checkout_first_step_title_text">Шаг 1. Способы доставки</string>
+    <string name="authorization_activity_title_text">Авторизация</string>
+    <string name="checkout_second_step_title_text">Шаг 2. Адрес доставки и форма оплаты</string>
+    <string name="checkout_third_step_title_text">Шаг 3. Подтверждение</string>
+    <string name="checkout_online_payment_title_text">Online оплата</string>
+    <string name="checkout_geolocation_activity_title_text">Геолокация</string>
+    <string name="checkout_first_step_date_spinne_text">Выберите дату доставки</string>
+    <string name="checkout_first_step_time_spinner_text">Выберите время доставки</string>
+    <string name="NoInternet">Не удалось получить данные из сети</string>
+        <string-array name="main_menu_titles">
+    	<item>Каталог</item>
+    	<item>Поиск</item>
+    	<item>Сканер</item>
+    	<item>Моя корзина</item>
+    	<item>Мой кабинет</item>
+    	<item>Магазины</item>
+    	<item>Услуги</item>
+    	<item>О компании</item>
+    	<item>Обратная связь</item>
+    </string-array>
+    	<string name="nothing_find">Ничего не найдено</string>
+    	<string name="search">Поиск</string>	
+</resources>

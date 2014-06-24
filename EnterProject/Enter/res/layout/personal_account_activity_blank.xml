@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Основная разметка Анкеты в личном кабинете -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+         android:id="@+id/personal_account_activity_blank_list"
+        android:scrollbars="none" >
+    </ListView>
+
+    <FrameLayout 
+        android:id="@+id/personal_account_activity_blank_progress"
+        android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:clickable="true"
+        android:visibility="gone"
+        android:background="@color/transparent"
+        >
+    <ProgressBar
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminateDrawable="@drawable/progress_spin"
+         />
+    </FrameLayout>
+
+</FrameLayout>

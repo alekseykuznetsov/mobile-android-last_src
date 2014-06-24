@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/servicesleft_fr_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/services_main_fr_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <ru.enter.widgets.ButtonBrash
+                android:id="@+id/services_main_fr_button_furniture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/services_main_fr_buttons_furniture"
+                android:gravity="left|bottom"
+                android:text="Мебель"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="1dp" />
+
+            <ru.enter.widgets.ButtonBrash
+                android:id="@+id/services_main_fr_button_electronic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/services_main_fr_buttons_electronic"
+                android:gravity="left|bottom"
+                android:text="Электроника"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <ru.enter.widgets.ButtonBrash
+                android:id="@+id/services_main_fr_button_household_appliances"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/services_main_fr_buttons_household_appliances"
+                android:gravity="left|bottom"
+                android:text="Бытовая техника"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="1dp" />
+
+            <ru.enter.widgets.ButtonBrash
+                android:id="@+id/services_main_fr_button_sport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/services_main_fr_buttons_sport"
+                android:gravity="left|bottom"
+                android:text="Спорт"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

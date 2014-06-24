@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center" >
+<!-- 
+    <ProgressBar
+        android:id="@+id/product_card_gallery_ac_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+         -->
+
+    <com.polites.android.GestureViewPager
+        android:id="@+id/product_card_gallery_ac_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    
+    <Button
+        android:id="@+id/btn_galery_image_prev"
+        android:layout_width="57dp"
+        android:layout_height="107dp"
+        android:layout_alignBaseline="@+id/product_card_gallery_ac_view_pager"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/btn_arr_galery_l" 
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btn_galery_image_next"
+        android:layout_width="57dp"
+        android:layout_height="107dp"
+        android:layout_alignBaseline="@+id/product_card_gallery_ac_view_pager"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/btn_arr_galery_r" 
+        android:visibility="invisible" />
+
+</RelativeLayout>

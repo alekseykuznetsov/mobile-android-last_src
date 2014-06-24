@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="horizontal"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content">
+    
+    <ImageView
+	android:id="@+id/image" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content"
+	android:src="@drawable/icon"
+	android:layout_gravity="center"/>
+		<LinearLayout
+			android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:orientation="vertical" 
+    		android:layout_weight="1"
+    		android:background="@android:color/white"
+			>	
+			<TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="03/04/2011    13:56" 
+			android:id="@+id/date" 
+			android:textStyle="bold"
+			android:textSize = "10sp"
+			android:textColor="@android:color/darker_gray"
+			android:layout_marginLeft="5dp"
+	    	/>
+			<TextView 
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:text="Команда связной приняла участие в дружеском матче" 
+			android:id="@+id/name" 
+			android:textStyle="bold"
+			android:textSize = "15sp"
+			android:textColor="@android:color/black"
+			android:layout_marginLeft="5dp"
+			android:layout_weight="1"
+	    	/>
+	    	<TextView 
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:text="lmjnhhbg.,hb .kihvhkcvutvluvoltfvuotfvoltytcftcdonckdhnco;sjaxpj'ikv jkh,jhv ghv ,hgv" 
+			android:id="@+id/news" 
+			android:textSize = "13sp"
+			android:textColor="@android:color/black"
+			android:layout_marginLeft="5dp"
+			android:layout_weight="1"
+	    	/>
+    		</LinearLayout>
+    		<ImageView
+			android:id="@+id/image1" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:src="@drawable/pic_arrow"
+			android:layout_gravity="center|right"
+			android:layout_marginRight="10dp"/>
+</LinearLayout>

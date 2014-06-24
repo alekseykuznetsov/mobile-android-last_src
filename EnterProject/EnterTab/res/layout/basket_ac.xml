@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_texture"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/order_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:padding="9dp" >
+
+        <ListView
+            android:id="@+id/basket_ac_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/basket_ac_merge"
+            android:divider="#BBBBBB"
+            android:dividerHeight="1dp"
+            android:fadingEdgeLength="5dp"
+            android:overScrollMode="never"
+            android:scrollbars="none" />
+
+        <ru.enter.widgets.TextViewNormal
+            android:id="@+id/basket_ac_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="В корзине нет товаров"
+            android:textColor="#BBBBBB"
+            android:textSize="28dp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/basket_ac_merge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" 
+                    android:visibility="gone">
+
+                    <ru.enter.widgets.TextViewBold
+                        android:id="@+id/basket_ac_label_services_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Кол-во услуг:"
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/basket_bg_multiple" />
+
+                    <ru.enter.widgets.TextViewBold
+                        android:id="@+id/basket_ac_text_services_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+
+                    <ru.enter.widgets.TextViewBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="шт."
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp" >
+
+                    <ru.enter.widgets.TextViewBold
+                        android:id="@+id/basket_ac_label_goods_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Кол-во товаров:"
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/basket_bg_multiple" />
+
+                    <ru.enter.widgets.TextViewBold
+                        android:id="@+id/basket_ac_text_goods_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:textSize="18dp"/>
+
+                    <ru.enter.widgets.TextViewBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="шт."
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <ru.enter.widgets.TextViewNormal
+                    android:id="@+id/basket_ac_label_total_ruble"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="#000000"
+                    android:textSize="26dp" />
+
+                <ru.enter.widgets.TextViewBold
+                    android:id="@+id/basket_ac_text_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/basket_ac_label_total_ruble"
+                    android:layout_toLeftOf="@id/basket_ac_label_total_ruble"
+                    android:textColor="#000000"
+                    android:textSize="26dp" />
+
+                <ru.enter.widgets.TextViewNormal
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/basket_ac_label_total_ruble"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/basket_ac_text_total"
+                    android:text="Итого:"
+                    android:textColor="#000000"
+                    android:textSize="26dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/basket_ac_label_total_ruble"
+                    android:layout_marginTop="20dp" >
+
+                    <View
+                        android:id="@+id/basket_ac_view_blank"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_weight="0.5" />
+
+                    <ru.enter.widgets.ButtonBold
+                        android:id="@+id/basket_ac_button_clean"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_btn_solid_grey"
+                        android:shadowColor="#ffffff"
+                        android:shadowDx="0"
+                        android:shadowDy="1"
+                        android:shadowRadius="1"
+                        android:text="Очистить"
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+
+                    <ru.enter.widgets.ButtonBold
+                        android:id="@+id/basket_ac_button_make_order"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_btn_solid_orange"
+                        android:shadowColor="#000000"
+                        android:shadowDx="0"
+                        android:shadowDy="-1"
+                        android:shadowRadius="1"
+                        android:text="Оформить заказ"
+                        android:textColor="#ffffff"
+                        android:textSize="18dp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

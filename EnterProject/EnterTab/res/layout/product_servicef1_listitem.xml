@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="60dp" >
+
+    <ImageView
+        android:id="@+id/productServiceF1IvPhoto"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/simple_gray" />
+
+    <TextView
+        android:id="@+id/productServiceF1TvName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@+id/productServiceF1TvPrice"
+        android:layout_toRightOf="@+id/productServiceF1IvPhoto"
+        android:maxLines="2"
+        android:text="Name"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:typeface="normal" />
+    
+	<!-- not aviliable in current api
+    <TextView
+        android:id="@+id/productServiceF1TvInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/productServiceF1TvName"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@+id/productServiceF1BBuy"
+        android:layout_toRightOf="@+id/productServiceF1IvPhoto"
+        android:text="Description"
+        android:textColor="@color/white1"
+        android:textSize="20sp"
+        android:typeface="normal" />
+        -->
+
+    <TextView
+        android:id="@+id/productServiceF1TvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/productServiceF1TvName"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:text="Price"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:typeface="normal" />
+
+    <Button
+        android:id="@+id/productServiceF1BBuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/productServiceF1TvPrice"
+        android:layout_below="@+id/productServiceF1TvPrice"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/product_card_service_buy_button"
+        android:text="@string/product_card_button_buy"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</RelativeLayout>

@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_texture"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/order_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:padding="9dp" >
+
+        <ru.enter.widgets.TextViewBold
+            android:id="@+id/order_one_click_ac_text_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#232323"
+            android:padding="10dp"
+            android:text="Способ получения заказа"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ru.enter.widgets.TextViewBold
+                android:id="@+id/order_one_click_ac_text_label_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Выбран город:"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <ru.enter.widgets.TextViewNormal
+                android:id="@+id/order_one_click_ac_text_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp"
+            android:background="#BBBBBB" />
+
+        <ru.enter.widgets.TextViewBold
+            android:id="@+id/order_one_click_ac_text_label_delivery_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="Выберите способ получения заказа:"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <RadioGroup
+            android:id="@+id/order_one_click_ac_radiogroup_delivery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal" >
+
+            <ru.enter.widgets.RadioButtonNormal
+                android:id="@+id/order_one_click_ac_radiobutton_self"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/order_radiobutton_selector"
+                android:checked="true"
+                android:text="Самовывоз - бесплатно"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/order_one_click_ac_additional_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#BBBBBB" />
+
+                <ru.enter.widgets.TextViewBold
+                    android:id="@+id/order_one_click_ac_text_label_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Выбранный магазин:"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <ru.enter.widgets.TextViewNormal
+                    android:id="@+id/order_one_click_ac_text_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/product_list_bg_field"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="20dp"
+                    android:textColor="#2B4074"
+                    android:textSize="20dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#BBBBBB" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ru.enter.widgets.TextViewBold
+                        android:id="@+id/order_one_click_ac_text_label_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="20dp"
+                        android:text="Укажите дату самовывоза товара:"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+
+                    <RelativeLayout
+                        android:id="@+id/order_one_click_ac_linear_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/order_bg_field_with_arrow" >
+
+                        <ru.enter.widgets.TextViewBold
+                            android:id="@+id/order_one_click_ac_text_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:text="Выберите дату"
+                            android:textColor="#000000"
+                            android:textSize="20dp" />
+
+                        <ru.enter.widgets.TextViewBold
+                            android:id="@+id/order_one_click_ac_text_user_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:textColor="#2B4074"
+                            android:textSize="20dp" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="15dp"
+                android:background="#BBBBBB" />
+
+            <ru.enter.widgets.TextViewBold
+                android:id="@+id/order_one_click_ac_text_label_persona"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:text="Кому доставить"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ru.enter.widgets.EditTextNormal
+                    android:id="@+id/order_one_click_ac_edittext_firstname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/product_list_bg_field"
+                    android:hint="Имя"
+                    android:inputType="text"
+                    android:nextFocusDown="@+id/order_one_click_ac_edittext_lastname"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@null"
+                    android:textSize="20dp" />
+
+                <ru.enter.widgets.EditTextNormal
+                    android:id="@+id/order_one_click_ac_edittext_lastname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/product_list_bg_field"
+                    android:hint="Фамилия"
+                    android:inputType="text"
+                    android:nextFocusDown="@+id/order_one_click_ac_edittext_email"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@null"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ru.enter.widgets.EditTextNormal
+                    android:id="@+id/order_one_click_ac_edittext_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/product_list_bg_field"
+                    android:hint="E-mail"
+                    android:inputType="textEmailAddress"
+                    android:nextFocusDown="@+id/order_one_click_ac_edittext_mobile"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@null"
+                    android:textSize="20dp" />
+
+                <ru.enter.widgets.EditTextNormal
+                    android:id="@+id/order_one_click_ac_edittext_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/product_list_bg_field"
+                    android:hint="Телефон"
+                    android:imeOptions="actionDone"
+                    android:inputType="phone"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@null"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="15dp"
+                android:background="#BBBBBB" />
+
+            <ru.enter.widgets.TextViewBold
+                android:id="@+id/order_one_click_ac_text_label_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:text="Карта Связной клуб:"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/product_list_bg_field"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ru.enter.widgets.TextViewNormal
+                        android:id="@+id/order_one_click_ac_label_card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:textColor="#2B4074"
+                        android:textSize="20dp" />
+
+                    <ru.enter.widgets.EditTextNormal
+                        android:id="@+id/order_one_click_ac_edittext_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:paddingRight="10dp"
+                        android:textColor="#2B4074"
+                        android:textCursorDrawable="@null"
+                        android:textSize="20dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="15dp"
+                android:background="#BBBBBB" />
+
+            <ru.enter.widgets.TextViewBold
+                android:id="@+id/order_one_click_ac_text_label_payment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:text="Выберите способ оплаты:"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <RadioGroup
+                android:id="@+id/order_one_click_ac_radiogroup_payment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal" >
+
+                <ru.enter.widgets.RadioButtonNormal
+                    android:id="@+id/order_one_click_ac_radiogroup_widget_cash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/order_radiobutton_selector"
+                    android:checked="false"
+                    android:text="Оплата наличными"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <ru.enter.widgets.RadioButtonNormal
+                    android:id="@+id/order_one_click_ac_radiogroup_widget_bankcard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:button="@drawable/order_radiobutton_selector"
+                    android:checked="false"
+                    android:text="Оплата банковской картой"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <ru.enter.widgets.ButtonBold
+                    android:id="@+id/order_one_click_ac_button_next"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/selector_btn_solid_orange"
+                    android:shadowColor="#000000"
+                    android:shadowDx="0"
+                    android:shadowDy="-1"
+                    android:shadowRadius="1"
+                    android:text="Далее"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

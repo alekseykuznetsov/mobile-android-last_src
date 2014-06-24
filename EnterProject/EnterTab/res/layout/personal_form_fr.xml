@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:padding="15dp" >
+
+    <ListView
+        android:id="@+id/personal_form_fr_listview_address"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:divider="#000000"
+        android:dividerHeight="1dp"
+        android:fadingEdgeLength="5dp"
+        android:headerDividersEnabled="false"
+        android:overScrollMode="never"
+        android:scrollbarStyle="outsideInset"
+        android:scrollbarSize="2dp" >
+    </ListView>
+<!-- 
+    <LinearLayout
+        android:id="@+id/personal_form_fr_linear_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="15dp" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <ru.enter.widgets.ButtonNormal
+            android:id="@+id/personal_form_fr_text_button_change"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btn_stroke"
+            android:text="Изменить данные"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+
+        <ru.enter.widgets.ButtonNormal
+            android:id="@+id/personal_form_fr_text_button_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btn_stroke"
+            android:text="Сменить город"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+
+        <ru.enter.widgets.ButtonNormal
+            android:id="@+id/personal_form_fr_text_button_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btn_stroke"
+            android:text="Сменить пароль"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+    </LinearLayout>
+ -->
+    <FrameLayout
+        android:id="@+id/personal_form_fr_progress_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:clickable="true"
+        android:visibility="gone" >
+
+        <ProgressBar
+            style="@android:style/Widget.ProgressBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+</RelativeLayout>

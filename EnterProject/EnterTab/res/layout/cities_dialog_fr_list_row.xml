@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.enter.widgets.CheckableLinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:padding="10dp"    
+    android:gravity="center_vertical">
+
+    <TextView 
+        android:id="@+id/cities_dialog_fr_list_row_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"/>
+    
+    <CheckedTextView
+        android:id="@android:id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checkMark="@drawable/order_radiobutton_selector"
+        />
+
+</ru.enter.widgets.CheckableLinearLayout>

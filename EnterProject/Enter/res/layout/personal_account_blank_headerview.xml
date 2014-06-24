@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Основная разметка Анкеты в личном кабинете -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    >
+<!-- 
+    <ImageView
+        android:id="@+id/personal_account_blank_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/pic_user" >
+    </ImageView>
+ -->
+    <TextView
+        android:id="@+id/personal_account_blank_rubbish1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Имя:" 
+        android:layout_marginLeft="10dp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/personal_account_blank_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/personal_account_blank_rubbish1"
+        android:layout_marginRight="70dp"
+        android:textStyle="bold" 
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/personal_account_blank_button_change"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selector_btn_orange_solid"
+        android:lines="2"
+        android:text="Выйти из аккаунта"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:textStyle="bold" >
+    </Button>
+
+    <TextView
+        android:id="@+id/personal_account_blank_rubbish2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/personal_account_blank_name"
+        android:text="Телефон:" 
+        android:layout_marginLeft="10dp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/personal_account_blank_tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/personal_account_blank_rubbish2"
+        android:layout_marginRight="70dp"
+        android:textStyle="bold" 
+        android:layout_marginLeft="10dp">
+    </TextView>
+
+    <Button
+        android:id="@+id/personal_account_blank_button_change_password"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/personal_account_blank_button_change"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selector_btn_orange_solid"
+        android:lines="2"
+        android:text="Сменить пароль"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:textStyle="bold" >
+    </Button>
+
+    <TextView
+        android:id="@+id/personal_account_blank_rubbish3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/personal_account_blank_tel"
+        android:text="E-mail:" 
+        android:layout_marginLeft="10dp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/personal_account_blank_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/personal_account_blank_rubbish3"
+        android:layout_marginRight="70dp"
+        android:textStyle="bold" 
+        android:layout_marginLeft="10dp">
+    </TextView>
+
+    <Button
+        android:id="@+id/personal_account_blank_button_change_city"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/personal_account_blank_button_change_password"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selector_btn_orange_solid"
+        android:lines="2"
+        android:text="Сменить город"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:textStyle="bold" >
+    </Button>
+
+    <Button
+        android:id="@+id/personal_account_blank_button_change_data"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/personal_account_blank_button_change_city"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selector_btn_orange_solid"
+        android:lines="2"
+        android:text="Изменить данные"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:textStyle="bold" >
+    </Button>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/personal_account_blank_button_change_data"
+        android:layout_marginTop="10dp"
+        android:background="#939393"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="Адреса доставки"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <Button
+            android:id="@+id/personal_account_blank_button_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_adr_add_background" >
+        </Button>
+    </RelativeLayout>
+
+</RelativeLayout>

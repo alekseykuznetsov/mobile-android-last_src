@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Элемент листа Корзина -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="10dip"
+    android:background="@android:color/white"
+    android:paddingBottom="10dip"
+    android:paddingTop="10dip" >
+
+    <RelativeLayout
+        android:id="@+id/basket_list_row_frame"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill"
+        android:layout_marginBottom="3dip"
+        android:layout_marginLeft="3dip"
+        android:layout_marginRight="3dip"
+        android:layout_marginTop="3dip"
+        android:background="@drawable/item_gradient_background" >
+
+        <ImageView
+            android:id="@+id/basket_list_row_image"
+            android:layout_width="60dip"
+            android:layout_height="70dip"
+            android:layout_margin="5dip"
+            android:src="@drawable/cap" />
+
+        <TextView
+            android:id="@+id/basket_list_row_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dip"
+            android:layout_toRightOf="@+id/basket_list_row_image"
+            android:maxLines="2"
+            android:text="TextViewczxczxczcxczxczxczxczxcczx"
+            android:textColor="@android:color/black"
+            android:layout_toLeftOf="@+id/basket_list_row_button_delete"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/basket_list_row_title"
+            android:layout_margin="5dip"
+            android:layout_toRightOf="@+id/basket_list_row_image"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ru.enter.widgets.NumberPicker
+                android:id="@+id/basket_list_row_number_picker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+            </ru.enter.widgets.NumberPicker>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/basket_list_row_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:text="35000"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- android:background="@drawable/btn_close_basket_item_background" -->
+    <ImageButton
+        android:id="@+id/basket_list_row_button_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|top"
+        android:layout_marginLeft="-10dp"
+        android:layout_marginRight="-10dp"
+        android:layout_marginTop="-10dp"
+        android:layout_marginBottom="-10dp"
+        android:padding="10dp"
+        android:background="@color/transparent"
+        android:src="@drawable/btn_close_basket_item_background" />
+
+</FrameLayout>

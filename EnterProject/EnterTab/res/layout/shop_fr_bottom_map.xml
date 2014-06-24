@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <View
+        android:id="@+id/shop_fr_bottom_map_delimeter"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/shop_bg_line_multiple" />
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/shop_fr_bottom_map_delimeter" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical" >
+
+                <!-- android:background="#BB000000" -->
+                <ImageView
+                    android:id="@+id/shop_fr_bottom_map_image_target"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="center"
+                    android:src="@drawable/btn_map_location" />
+
+                <ImageView
+                    android:id="@+id/shop_fr_bottom_map_image_marker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:scaleType="center"
+                    android:src="@drawable/btn_map_stores" />
+
+                <ImageView
+                    android:id="@+id/shop_fr_bottom_map_image_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:scaleType="center"
+                    android:src="@drawable/btn_map_fullscreen" />
+            </LinearLayout>
+        </RelativeLayout>
+    </TabHost>
+
+</RelativeLayout>

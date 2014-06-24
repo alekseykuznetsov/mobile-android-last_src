@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ListView
+        android:id="@+id/infoList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/list_grey_divider"
+        android:dividerHeight="1dp"
+        android:scrollbars="none"
+        android:overScrollMode="ifContentScrolls"
+        android:fadingEdge="vertical"
+        android:cacheColorHint="#3563e5">
+    </ListView>
+    <!-- <ListView -->
+    <!-- android:id="@+id/infoList" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="fill_parent" -->
+    <!-- android:fadingEdge="none" -->
+    <!-- android:divider="@drawable/divider" -->
+    <!-- android:dividerHeight="1dp" -->
+    <!-- android:fadingEdgeLength="0dp" -->
+    <!-- android:fadeScrollbars="false" > -->
+    <!-- </ListView> -->
+
+</RelativeLayout>

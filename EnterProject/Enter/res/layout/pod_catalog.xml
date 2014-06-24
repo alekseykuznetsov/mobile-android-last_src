@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/pod_catalog_frame"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+<!-- 
+        <LinearLayout
+        android:id="@+id/pod_catalog_header_shoplocator"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="#424244"
+        android:layout_below="@id/pod_catalog_frame"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/pod_catalog_header_shoplocator_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:text="Выберите магазин"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/pod_catalog_header_shoplocator_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/icn_map" />
+    </LinearLayout>
+     -->
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/pod_catalog_frame"
+         >
+         <!-- android:layout_below="@id/pod_catalog_header_shoplocator" -->
+
+        <ListView
+            android:id="@+id/pod_catalog_listView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawSelectorOnTop="false" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/pod_catalog_frame_progress"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#B9000000"
+        android:clickable="true"
+        android:visibility="gone" >
+
+        <ProgressBar
+            style="@style/customProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+</RelativeLayout>

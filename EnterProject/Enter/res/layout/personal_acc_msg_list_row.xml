@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:padding="10dp">
+	<TextView 
+	android:id="@+id/personal_account_row_msg_from"
+	android:layout_toRightOf="@+id/textView1"
+	android:layout_height="wrap_content" 
+	android:layout_width="wrap_content"
+	android:textStyle="bold"
+	android:text="text">
+	</TextView>
+	<TextView 
+	android:layout_height="wrap_content" 
+	android:id="@+id/textView1" 
+	android:text="От: " 
+	android:layout_width="wrap_content" 
+	android:layout_alignTop="@+id/personal_account_row_msg_from" 
+	android:layout_alignBottom="@+id/personal_account_row_msg_from">
+	</TextView>
+	<TextView 
+	android:layout_below="@+id/personal_account_row_msg_from"
+	android:layout_height="wrap_content" 
+	android:id="@+id/personal_account_msg_row_theme" 
+	android:layout_toRightOf="@+id/textView2"
+	android:layout_width="wrap_content" 
+	android:textStyle="bold"
+	android:text="text2"/>
+	<TextView 
+	android:layout_height="wrap_content" 
+	android:id="@+id/textView2" 
+	android:text="Тема: "
+	android:layout_width="wrap_content" 
+	android:layout_alignTop="@+id/personal_account_msg_row_theme" 
+	android:layout_alignBottom="@+id/personal_account_msg_row_theme">
+	</TextView>
+	<ImageButton 
+	android:id="@+id/personal_account_msg_row_delete" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content"
+	android:background="@drawable/btn_adr_del_background"
+	android:layout_alignParentRight="true">
+	</ImageButton>
+</RelativeLayout>

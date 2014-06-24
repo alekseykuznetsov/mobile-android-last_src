@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants" >
+
+    <RelativeLayout
+        android:layout_width="220dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:descendantFocusability="blocksDescendants" >
+
+        <!-- android:background="@drawable/bg_item_for_black_bg" -->
+
+        <RelativeLayout
+            android:id="@+id/imagesRel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" >
+
+            <ImageView
+                android:id="@+id/image_bakcground"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/bg_item_pic"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/product_card_tab_related_products_grid_item_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+        
+        <!--  android:src="@drawable/product_card_tab_related_products_grid_item_item_test_image"  -->
+
+        <RatingBar
+            android:id="@+id/product_card_tab_related_products_grid_item_rating_bar"
+            style="@style/product_card_small_rating_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imagesRel"
+            android:layout_below="@+id/imagesRel"
+            android:layout_marginTop="7dp"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:rating="3.5" />
+
+        <TextView
+            android:id="@+id/product_card_tab_related_products_grid_item_text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imagesRel"
+            android:layout_alignRight="@+id/imagesRel"
+            android:layout_below="@+id/product_card_tab_related_products_grid_item_rating_bar"
+            android:layout_marginTop="4dp"
+            android:lines="2"
+            android:text="Внешний жеский диск"
+            android:textColor="#ffffff"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/product_card_tab_related_products_grid_item_text_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imagesRel"
+            android:layout_alignRight="@+id/imagesRel"
+            android:layout_below="@+id/product_card_tab_related_products_grid_item_text_title"
+            android:layout_marginTop="4dp"
+            android:text="Western Digital Elements SE 1 TB (WFJDBHfsdfs...)"
+            android:textColor="#ffffff"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/product_card_tab_related_products_grid_item_text_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imagesRel"
+            android:layout_below="@+id/product_card_tab_related_products_grid_item_text_description"
+            android:layout_marginTop="14dp"
+            android:text="69 900"
+            android:textColor="#ffffff"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/product_card_tab_related_products_grid_item_text_P"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/product_card_tab_related_products_grid_item_text_price"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/product_card_tab_related_products_grid_item_text_price"
+            android:text="P"
+            android:textColor="#ffffff"
+            android:textSize="24dp" />
+
+        <Button
+            android:id="@+id/product_card_tab_related_products_grid_item_button_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imagesRel"
+            android:layout_below="@+id/product_card_tab_related_products_grid_item_text_price"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/selector_btn_solid_orange"
+            android:drawableLeft="@drawable/product_card_icn_basket_small"
+            android:drawablePadding="7dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:text="В корзину"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

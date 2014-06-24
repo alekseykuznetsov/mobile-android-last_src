@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/balloon_main_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/map_dialog"
+    android:orientation="vertical" >
+
+    <ru.enter.widgets.TextViewBrash
+        android:id="@+id/mapBalloonTvEnter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="6dp"
+        android:text="@string/enter"
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+
+        <ru.enter.widgets.TextViewNormal
+            android:id="@+id/mapBalloonTvAddress"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_textview"
+            android:maxLines="3"
+            android:maxWidth="280dp"
+            android:padding="10dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <ru.enter.widgets.ButtonBold
+            android:id="@+id/mapBalloonBRoute"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rounded_textview"
+            android:maxHeight="35dp"
+            android:text="@string/marker_route"
+            android:textColor="@color/black"
+            android:layout_marginBottom="3dp"
+            android:textSize="22dp" />
+
+        <ru.enter.widgets.ButtonBold
+            android:id="@+id/mapBalloonBInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rounded_textview"
+            android:maxHeight="35dp"
+            android:text="@string/marker_info"
+            android:textColor="@color/black"
+            android:textSize="22dp" />
+    </LinearLayout>
+
+</LinearLayout>

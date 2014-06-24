@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:padding="15dp" >
+
+    <ru.enter.widgets.TextViewNormal
+        android:id="@+id/product_card_360_ac_text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Внешний жёский диск"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <ru.enter.widgets.TextViewBold
+        android:id="@+id/product_card_360_ac_text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/product_card_360_ac_text_title"
+        android:layout_toLeftOf="@+id/product_card_360_ac_text_price"
+        android:text="Segate FreeAgent GoFlex 500 ГБ красный (SHFJ86873)"
+        android:textColor="@color/black"
+        android:textSize="26dp"/>
+
+    <ru.enter.widgets.TextViewNormal
+        android:id="@+id/product_card_360_ac_text_price_P"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="Р"
+        android:textColor="@color/black"
+        android:textSize="30dp" />
+
+    <ru.enter.widgets.TextViewBold
+        android:id="@+id/product_card_360_ac_text_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/product_card_360_ac_text_price_P"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/product_card_360_ac_text_price_P"
+        android:text="17 890"
+        android:textColor="@color/black"
+        android:textSize="30dp" />
+
+    <ru.enter.widgets.ButtonNormal
+        android:id="@+id/product_card_360_ac_button_buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/product_card_360_ac_text_price_P"
+        android:layout_below="@id/product_card_360_ac_text_price"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/selector_btn_solid_orange"
+        android:drawableLeft="@drawable/product_card_icn_basket_small"
+        android:drawablePadding="7dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:text="В корзину"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp" />
+
+    <RelativeLayout
+        android:id="@+id/product_card_360_ac_relative_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/product_card_360_ac_icon"
+        android:layout_below="@+id/product_card_360_ac_text_name"
+        android:layout_margin="20dp" >
+
+        <ImageView
+            android:id="@+id/product_card_360_ac_gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" >
+        </ImageView>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/product_card_360_ac_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/product_card_360_image" />
+
+</RelativeLayout>

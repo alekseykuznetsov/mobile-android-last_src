@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/about_activity_frame"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#5f5f5f"
+        android:gravity="bottom"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dip"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/news_Button"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right"
+                android:layout_marginTop="1px"
+                android:layout_weight="1"
+                android:background="#939393"
+                android:text="О проекте"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/information_Button"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right"
+                android:layout_marginLeft="2px"
+                android:layout_marginTop="1px"
+                android:layout_weight="1"
+                android:background="#939393"
+                android:text="Как сделать заказ?"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dip"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/responsibility_Button"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right"
+                android:layout_marginLeft="2px"
+                android:layout_marginTop="1px"
+                android:layout_weight="1"
+                android:background="#939393"
+                android:text="Как оплатить?"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/feedback_Button"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right"
+                android:layout_marginLeft="2px"
+                android:layout_marginTop="1px"
+                android:layout_weight="1"
+                android:background="#939393"
+                android:text="Обратная связь"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/about_web_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+    <ListView 
+        android:id="@+id/about_list_callbacks"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone"/>
+
+</LinearLayout>

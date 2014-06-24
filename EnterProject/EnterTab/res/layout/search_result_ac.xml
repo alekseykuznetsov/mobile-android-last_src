@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b2b4b7"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/product_list_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/search_result_ac_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="#BBBBBB"
+            android:textSize="28dp"
+            android:visibility="gone" />
+
+        <GridView
+            android:id="@+id/search_result_ac_grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/search_result_ac_progress"
+            android:focusableInTouchMode="true"
+            android:horizontalSpacing="20dp"
+            android:numColumns="4"
+            android:overScrollMode="never"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp"
+            android:scrollbars="none"
+            android:listSelector="@drawable/grid_empty_selector"
+            android:verticalSpacing="15dp" >
+        </GridView>
+
+        <ProgressBar
+            android:id="@+id/search_result_ac_progress"
+            style="@android:style/Widget.ProgressBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

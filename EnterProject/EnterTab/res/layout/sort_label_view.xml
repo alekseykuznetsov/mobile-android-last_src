@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+    
+    <!-- <TextView  -->
+     <ru.enter.widgets.TextViewBold
+        android:id="@+id/sort_label_view_text"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"    	
+    	android:textSize="20sp"
+    	android:text="esgfsweg"
+    	android:textColor="@color/white"
+    	android:singleLine="true"
+    	android:layout_alignParentLeft="true"
+    	android:layout_centerVertical="true"
+    	android:layout_marginRight="5dp"
+        />
+    <ImageView 
+        android:id="@+id/sort_label_view_img"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_toRightOf="@+id/sort_label_view_text"
+    	android:layout_centerVertical="true"
+    	android:src="@drawable/icn_arr_sort_up2x"    	
+    	/>
+</merge>

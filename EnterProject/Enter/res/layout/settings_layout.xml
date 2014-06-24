@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@color/white">
+
+    <FrameLayout
+        android:id="@+id/settings_frame"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Время хранения кэш:"
+        android:textSize="18sp"
+        android:background="#939393"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+    
+    <Spinner 
+        android:id="@+id/settings_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Подписка:"
+        android:textSize="18sp"
+        android:background="#939393"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" 
+            android:layout_weight="0.8"
+            android:padding="8dp">
+            <CheckBox
+                android:id="@+id/settings_check_sms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/checkbox_background"
+                android:text="SMS уведовления"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:singleLine="true"/>
+             <CheckBox
+                android:id="@+id/settings_check_email" 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/checkbox_background"
+                android:text="Email уведомления"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:singleLine="true"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/settings_text_right"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="Уведомления будут приходить на адрес, указаный в анкете ..."
+            android:textAppearance="?android:attr/textAppearanceMedium" 
+            android:layout_weight="1"
+            android:background="@drawable/item_gradient_background"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_margin="5dp"
+            android:textSize="12sp"
+            android:padding="3dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/settings_linear_to_click"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ваш город:" 
+            android:padding="5dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/settings_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" 
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:paddingRight="20dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pic_arrow" />
+
+    </LinearLayout>
+
+</LinearLayout>

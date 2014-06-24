@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:panel="http://schemas.android.com/apk/res/ru.enter"
+    android:id="@+id/headerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:paddingBottom="15dp"
+    android:paddingTop="10dp" >
+
+    <ru.enter.widgets.TextViewNormal
+        android:id="@+id/product_card_ac_text_article"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_card_ac_lable"
+        android:layout_marginLeft="10dp"
+        android:text="Артикул"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <ru.enter.widgets.TextViewNormal
+        android:id="@+id/product_card_ac_text_article_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/product_card_ac_text_article"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/product_card_ac_text_article"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <RatingBar
+        android:id="@+id/product_card_ac_rating_bar"
+        style="@style/product_card_rating_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/product_card_ac_text_article_number"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:rating="3.5" />
+
+    <ru.enter.widgets.TextViewBold
+        android:id="@+id/product_card_ac_text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/product_card_ac_text_article"
+        android:layout_marginTop="7dp"
+        android:layout_toLeftOf="@+id/l_prices"
+        android:paddingLeft="10dp"
+        android:textColor="#FFFFFF"
+        android:textSize="26dp" />
+
+    <FrameLayout
+        android:id="@+id/product_card_model"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_card_ac_text_name"
+        android:background="@color/transparent" >
+
+        <LinearLayout
+            android:id="@+id/product_card_model_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/background_model"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/icn_variants" />
+
+            <TextView
+                android:id="@+id/product_card_model_list_variant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Варианты:"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <ru.enter.widgets.TextViewNormal
+        android:id="@+id/product_card_ac_text_delivery_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_card_model"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="7dp"
+        android:text="Как получить заказ?"
+        android:textColor="#FFD300"
+        android:textSize="18dp" />
+
+    <ru.enter.widgets.TextViewNormal
+        android:id="@+id/product_card_ac_text_delivery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/product_card_ac_text_delivery_title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_toLeftOf="@+id/l_prices"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp" />
+
+    <ru.enter.widgets.Panel
+        android:id="@+id/product_card_share_slider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_card_ac_text_delivery"
+        android:layout_gravity="center_vertical|left"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="7dp"
+        panel:animationDuration="500"
+        panel:content="@+id/product_card_share_buttons"
+        panel:handle="@+id/product_card_ac_button_share"
+        panel:linearFlying="true"
+        panel:position="left" >
+
+        <ru.enter.widgets.ButtonNormal
+            android:id="@+id/product_card_ac_button_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/product_card_ac_text_delivery"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/selector_btn_share"
+            android:drawableLeft="@drawable/product_card_icn_share"
+            android:drawablePadding="4dp"
+            android:minHeight="1dp"
+            android:padding="8dp"
+            android:text="Поделиться"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+
+        <!-- android:background="@drawable/selector_btn_share" -->
+
+        <LinearLayout
+            android:id="@+id/product_card_share_buttons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_share"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="7dp" >
+
+            <ImageButton
+                android:id="@+id/product_card_share_fb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/icn_share_fb" />
+
+            <ImageButton
+                android:id="@+id/product_card_share_vk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:background="@null"
+                android:src="@drawable/icn_share_vk" />
+
+            <ImageButton
+                android:id="@+id/product_card_share_tw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:background="@null"
+                android:src="@drawable/icn_share_tw" />
+        </LinearLayout>
+    </ru.enter.widgets.Panel>
+
+    <ru.enter.widgets.TextViewBold
+        android:id="@+id/product_card_ac_text_is_buyable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="4dp"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp" />
+
+    <RelativeLayout
+        android:id="@+id/l_prices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:minEms="10"
+        android:layout_below="@+id/product_card_ac_text_is_buyable" >
+
+        
+        <ru.enter.widgets.TextViewNormal
+            android:id="@+id/empty_space"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/product_card_ac_text_current_price"
+            android:layout_toRightOf="@+id/product_card_ac_text_current_price_ruble"
+            android:text="%."
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:visibility="invisible"/>
+        
+        
+        <ru.enter.widgets.TextViewNormal
+            android:id="@+id/product_card_ac_text_current_price_ruble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/product_card_ac_text_current_price"
+            android:layout_marginTop="10dp"
+                        android:layout_marginRight="35dp"
+            android:layout_toRightOf="@+id/product_card_ac_text_current_price"
+            android:text="Р     "
+            android:textColor="#FFFFFF"
+            android:textSize="30dp" />
+
+        <ru.enter.widgets.TextViewBold
+            android:id="@+id/product_card_ac_text_current_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/product_card_ac_text_old_price"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp" />
+
+        <ru.enter.widgets.TextViewNormal
+            android:id="@+id/product_card_ac_text_old_price_ruble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/product_card_ac_text_old_price"
+            android:layout_toRightOf="@+id/product_card_ac_text_old_price"
+            android:text="Р"
+            android:textColor="#757575"
+            android:textSize="20sp" />
+
+        <ru.enter.widgets.TextViewBold
+            android:id="@+id/product_card_ac_text_old_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:textColor="#757575"
+            android:textSize="20sp" />
+
+        <ru.enter.widgets.TextViewNormal
+            android:id="@+id/product_card_ac_text_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/product_card_ac_text_old_price"
+            android:layout_toRightOf="@+id/product_card_ac_text_old_price_ruble"
+            android:textColor="#757575"
+            android:textSize="20sp" />
+
+        
+    </RelativeLayout>
+    
+    <ru.enter.widgets.ButtonNormal
+        	android:ellipsize="none"
+        	android:singleLine="true"
+            android:id="@+id/product_card_ac_button_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignLeft="@+id/l_prices"
+            android:layout_below="@+id/l_prices"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/selector_btn_basket_big"
+            android:drawableLeft="@drawable/product_card_icn_basket"
+            android:drawablePadding="12dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:text="Купить "
+            android:textColor="#FFFFFF"
+            android:textSize="22dp" />
+    
+
+    <RelativeLayout
+        android:id="@+id/product_card_ac_button_buy_now_relative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/l_prices"
+        android:layout_marginTop="7dp" >
+
+        <ru.enter.widgets.ButtonNormal
+            android:id="@+id/product_card_ac_button_buy_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_btn_basket_big"
+            android:drawableLeft="@drawable/product_card_icn_buynow"
+            android:drawablePadding="12dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:text="Купить сейчас"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:visibility="visible" />
+
+        <ru.enter.widgets.TextViewNormal
+            android:id="@+id/product_card_progress_layout_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Проверка магазина"
+            android:textColor="@color/white"
+            android:visibility="invisible" />
+
+        <ProgressBar
+            android:id="@+id/product_card_progress_layout_bar"
+            style="@android:style/Widget.ProgressBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/product_card_progress_layout_text"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</RelativeLayout>

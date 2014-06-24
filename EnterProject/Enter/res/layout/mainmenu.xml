@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainmenu_main_frame"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/black"
+        android:orientation="vertical" 
+        android:paddingBottom="25dp">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/mainmenu_ad_pager"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+            <ImageView
+                android:id="@+id/mainmenu_ad_pager_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:src="@drawable/pic_arrow_" />
+
+            <ImageView
+                android:id="@+id/mainmenu_ad_pager_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:src="@drawable/pic_arrow" />
+        </RelativeLayout>
+
+        <ru.enter.widgets.Dots
+            android:id="@+id/mainmenu_dots"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <GridView
+            android:id="@+id/mainmenu_grid"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:columnWidth="90dp"
+            android:gravity="center"
+            android:horizontalSpacing="10dp"
+            android:numColumns="3"
+            android:verticalSpacing="15dp"
+            android:stretchMode="columnWidth" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/splash"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/black"
+        android:clickable="false"
+        android:src="@drawable/splash"
+        android:visibility="gone" />
+    
+    <!-- version build -->
+    
+    <TextView 
+        android:id="@+id/splash_text_build"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:clickable="false"
+        android:textColor="@color/white_smoke"
+        android:textSize="14sp"
+        android:text=""
+        android:padding="10dp"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+        />
+    
+    <FrameLayout 
+        android:id="@+id/mainmenu_frame_progress"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#B9000000"
+        android:clickable="true"
+        android:visibility="gone" >
+
+        <ProgressBar
+            style="@style/customProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+</FrameLayout>

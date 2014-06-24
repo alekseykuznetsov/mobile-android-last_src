@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/basket_list_item_root_elemet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp" >
+
+    <!-- TODO -->
+
+    <ImageView
+        android:id="@+id/basket_list_item_image"
+        android:layout_width="160px"
+        android:layout_height="160px"
+        android:adjustViewBounds="true"
+        android:paddingBottom="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="6dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ru.enter.widgets.TextViewNormal
+                android:id="@+id/basket_list_item_text_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/basket_list_item_text_price"
+                android:paddingRight="20dp"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <ru.enter.widgets.TextViewNormal
+                android:id="@+id/basket_list_item_text_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/basket_list_item_text_name"
+                android:layout_marginTop="6dp"
+                android:layout_toLeftOf="@+id/basket_list_item_text_price"
+                android:paddingRight="20dp"
+                android:textColor="@color/black"
+                android:textSize="26dp" />
+
+            <ru.enter.widgets.NumberPicker
+                android:id="@+id/basket_list_item_number_picker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/basket_list_item_text_description"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black" >
+            </ru.enter.widgets.NumberPicker>
+<!-- android:layout_marginTop="10dp" -->
+            <ImageButton
+                android:id="@+id/basket_list_item_imagebutton_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"                
+                android:layout_marginLeft="-10dp"
+                android:layout_marginRight="-10dp"
+                android:padding="10dp"
+                android:background="#ffffff"
+                android:src="@drawable/basket_btn_del_item" />
+
+            <ru.enter.widgets.TextViewNormal
+                android:id="@+id/basket_list_item_text_ruble"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/basket_list_item_imagebutton_delete"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+
+            <ru.enter.widgets.TextViewBold
+                android:id="@+id/basket_list_item_text_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/basket_list_item_text_ruble"
+                android:layout_toLeftOf="@id/basket_list_item_text_ruble"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/basket_list_item_linear_additional"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:divider="@drawable/personal_order_divider_line"
+            android:orientation="vertical"
+            android:showDividers="middle" >
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp" >
+
+    <ru.enter.widgets.TextViewBold
+        android:id="@+id/product_card_tab_where_buy_list_item_text_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:paddingRight="50dp"
+        android:text="м. Кузьминки, переулок Алексаньминки, переулок Александра Невского 27/14 м. "
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/product_card_tab_where_buy_list_item_img_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/product_card_icn_tab_where_buy_count_0" />
+
+    <ru.enter.widgets.TextViewNormal
+        android:id="@+id/product_card_tab_where_buy_list_item_text_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.1"
+        android:paddingLeft="20dp"
+        android:text="На витрине"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/product_card_tab_where_buy_list_item_button_buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_btn_stroke"
+        android:minHeight="1dp"
+        android:padding="7dp"
+        android:text="Купить в 1 клик"
+        android:textColor="#ffffff"
+        android:textSize="16dp" />
+
+</LinearLayout>

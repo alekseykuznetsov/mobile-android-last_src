@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-->FrameLayout
+        android:id="@+id/map_route_frame"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" /-->
+
+    <ru.enter.widgets.MyMapView
+        android:id="@+id/map_route_mapview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:apiKey="0m7l1f2rKZaotlxYxNlhZVlSp7tbLJ9jkWFHBFw"
+        android:clickable="true" />
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_filters"
+        android:enabled="true"
+        android:actionLayout="@layout/actionbar_item_filters"
+        android:showAsAction="always"
+        android:orderInCategory="1"
+        android:title="Фильтры"/>
+
+</menu>

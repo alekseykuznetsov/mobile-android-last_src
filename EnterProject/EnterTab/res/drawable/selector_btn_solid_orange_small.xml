@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Активная -->
+    <item android:drawable="@drawable/btn_solid_orange_small"
+        android:state_enabled="true"
+        android:state_pressed="false"
+        android:state_selected="false"/>
+
+    <!-- Нажатая -->
+    <item android:drawable="@drawable/btn_solid_orange_small"
+        android:state_enabled="true"
+        android:state_pressed="false"
+        android:state_selected="true"/>
+
+    <!-- Удерживаемая -->
+    <item android:drawable="@drawable/btn_solid_orange_click_small"
+        android:state_enabled="true"
+        android:state_pressed="true"
+        android:state_selected="false"/>
+
+    <!-- Удерживаемая нажатая-->
+    <item android:drawable="@drawable/btn_solid_orange_click_small"
+        android:state_enabled="true"
+        android:state_pressed="true"
+        android:state_selected="true"/>
+    
+    <!-- Не активная -->
+    <item android:drawable="@drawable/btn_solid_orange_off_small" 
+        android:state_enabled="false"/>
+
+</selector>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  >
+    <LinearLayout
+		  android:orientation="horizontal"
+		  android:layout_width="fill_parent"
+		  android:layout_height="wrap_content">
+		  <TextView 
+				android:layout_height="wrap_content" 
+				android:layout_width="wrap_content" 
+				android:id="@+id/report_list_row_name" 
+				android:layout_marginRight="5dp"
+				/> 
+			<TextView 
+				android:layout_height="wrap_content" 
+				android:layout_width="wrap_content" 
+				android:id="@+id/report_list_row_date" 
+				/> 	
+   </LinearLayout>
+   <LinearLayout 
+	  android:orientation="vertical"
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  >
+   			<LinearLayout 
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+		 		<TextView 
+					android:text="Дизайн" 
+					android:layout_height="wrap_content" 
+					android:layout_width="wrap_content" 
+					android:textSize = "20sp"
+					/> 
+				<RatingBar 
+					android:id="@+id/report_list_row_design"
+	            	style="?android:attr/ratingBarStyleSmall"
+		            android:layout_marginLeft="5dip"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center_vertical" />
+				</LinearLayout>		
+			<LinearLayout 
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+				 <TextView 
+					android:text="Функциональность" 
+					android:layout_height="wrap_content" 
+					android:layout_width="wrap_content" 
+					android:textSize = "20sp"
+					/> 
+				<RatingBar 
+					android:id="@+id/report_list_row_func"
+	            	style="?android:attr/ratingBarStyleSmall"
+		            android:layout_marginLeft="5dip"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center_vertical" />
+				</LinearLayout>		 
+				<LinearLayout 
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+		 				<TextView 
+							android:text="Цена" 
+							android:layout_height="wrap_content" 
+							android:layout_width="wrap_content" 
+							android:textSize = "20sp"
+							/> 
+						<RatingBar 
+							android:id="@+id/report_list_row_price"
+			            	style="?android:attr/ratingBarStyleSmall"
+				            android:layout_marginLeft="5dip"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:layout_gravity="center_vertical" />
+						</LinearLayout>	 
+				
+			
+					</LinearLayout>
+					<TextView 
+					android:layout_height="wrap_content" 
+					android:layout_width="wrap_content" 
+					android:id="@+id/report_list_row_text" 
+					android:textSize = "20sp"
+					/>
+</LinearLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp" >
+
+    <ImageView
+        android:id="@+id/order_complete_list_item_image"
+        android:layout_width="160px"
+        android:layout_height="160px"
+        android:adjustViewBounds="true"
+        android:paddingBottom="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="6dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ru.enter.widgets.TextViewNormal
+                android:id="@+id/order_complete_list_item_text_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/order_complete_list_item_text_price"
+                android:paddingRight="20dp"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <ru.enter.widgets.TextViewNormal
+                android:id="@+id/order_complete_list_item_text_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/order_complete_list_item_text_name"
+                android:layout_marginTop="6dp"
+                android:layout_toLeftOf="@+id/order_complete_list_item_text_price"
+                android:paddingRight="20dp"
+                android:textColor="#000000"
+                android:textSize="26dp" />
+
+            <RatingBar
+                android:id="@+id/order_complete_list_item_rating_bar"
+                style="@style/product_card_small_rating_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/order_complete_list_item_text_description"
+                android:layout_marginTop="7dp"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:rating="3.5" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/order_complete_list_item_rating_bar"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal" >
+
+                <ru.enter.widgets.TextViewNormal
+                    android:id="@+id/order_complete_list_item_label_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Кол-во"
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+
+                <ru.enter.widgets.TextViewNormal
+                    android:id="@+id/order_complete_list_item_text_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+
+                <ru.enter.widgets.TextViewNormal
+                    android:id="@+id/order_complete_list_item_label_count_end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="шт."
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <ru.enter.widgets.TextViewNormal
+                android:id="@+id/order_complete_list_item_text_ruble"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="40dp"
+                android:textColor="#000000"
+                android:textSize="30dp" />
+
+            <ru.enter.widgets.TextViewBold
+                android:id="@+id/order_complete_list_item_text_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/order_complete_list_item_text_ruble"
+                android:layout_toLeftOf="@id/order_complete_list_item_text_ruble"
+                android:textColor="#000000"
+                android:textSize="30dp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/order_complete_list_item_linear_additional"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:divider="@drawable/personal_order_divider_line"
+            android:orientation="vertical"
+            android:showDividers="middle" >
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

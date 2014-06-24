@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Экран "список товаров". поле для поиска, кнопки сортировки и фильтров -->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/items_list_catalog_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/items_list_catalog_frame"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:background="#232323"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp" >
+
+            <Button
+                android:id="@+id/items_list_catalog_buttons_toTags"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_switch_left_background"
+                android:padding="10dp"
+                android:text="Тэги"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/items_list_catalog_buttons_toSort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_switch_left_background"
+                android:padding="10dp"
+                android:text="Сортировка"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/items_list_catalog_buttons_toFilters"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_switch_right_background"
+                android:padding="10dp"
+                android:text="Фильтры"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/items_list_catalog_buttons_sort_frame"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bar_tag"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp" >
+
+            <Button
+                android:id="@+id/items_list_catalog_buttons_sort_by_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_switch_left_background"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="По цене"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/items_list_catalog_buttons_sort_by_reit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_switch_med_background"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="По рейтингу"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/items_list_catalog_buttons_sort_by_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_switch_right_background"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="По алфавиту"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ru.enter.widgets.TagsView
+            android:id="@+id/items_list_catalog_tags"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <ru.enter.widgets.FrameWithChildCount
+            android:id="@+id/items_list_catalog_frame_for_pager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <ru.enter.widgets.MyPager
+                android:id="@+id/awesomepager"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:minHeight="50dip"
+                android:minWidth="50dip" />
+
+            <ProgressBar
+                android:id="@+id/progress"
+                style="@style/customProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+        </ru.enter.widgets.FrameWithChildCount>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="2dip" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" >
+
+                <ru.enter.widgets.Dots
+                    android:id="@+id/items_list_catalog_dots"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/items_list_catalog_arrow_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_horizontal"
+                android:background="@drawable/img_arrow_left" />
+
+            <ImageView
+                android:id="@+id/items_list_catalog_arrow_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_horizontal"
+                android:background="@drawable/img_arrow_right" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/items_list_catalog_absolute"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#90000000"
+        android:visibility="invisible" >
+    </FrameLayout>
+
+</FrameLayout>

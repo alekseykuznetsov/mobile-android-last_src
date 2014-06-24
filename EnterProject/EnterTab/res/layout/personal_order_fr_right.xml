@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp" >
+
+    <ru.enter.widgets.TextViewNormal
+        android:id="@+id/personal_order_fr_right_label_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Заказ от"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <ru.enter.widgets.TextViewNormal
+        android:id="@+id/personal_order_fr_right_text_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/personal_order_fr_right_label_title"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/personal_order_fr_right_label_title"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <ru.enter.widgets.TextViewNormal
+        android:id="@+id/personal_order_fr_right_text_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/personal_order_fr_right_label_title"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000000"
+        android:textSize="40dp" />
+
+    <ImageView
+        android:id="@+id/personal_order_fr_right_image_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/personal_order_fr_right_text_number"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp" />
+
+    <ru.enter.widgets.TextViewBold
+        android:id="@+id/personal_order_fr_right_label_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/personal_order_fr_right_image_status"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/persona_order_bg_label_field"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#000000"
+        android:text="Состав заказа"
+        android:textSize="20dp"/>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignBottom="@id/personal_order_fr_right_label_order"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/personal_order_fr_right_label_order"
+        android:background="#000000" />
+
+    <ListView
+        android:id="@+id/personal_order_fr_right_listview_order"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/personal_order_fr_right_label_order"
+        android:divider="#000000"
+        android:dividerHeight="1dp"
+        android:overScrollMode="never"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:scrollbarSize="2dp" >
+    </ListView>
+
+    <FrameLayout
+        android:id="@+id/personal_order_fr_right_progress_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:clickable="true"
+        android:visibility="gone" >
+
+        <ProgressBar
+            style="@android:style/Widget.ProgressBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </FrameLayout>
+    <!--
+    <LinearLayout
+        android:id="@+id/personal_order_fr_right_linear_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            
+            <TextView
+                android:id="@+id/personal_order_fr_right_label_delivery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Доставка:"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/personal_order_fr_right_text_delivery_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/personal_order_fr_right_label_delivery"
+                android:text="самовывоз"
+                android:textSize="16dp" />
+            
+			<TextView
+                android:id="@+id/personal_order_fr_right_text_delivery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/personal_order_fr_right_text_delivery_type"
+                android:text="24.08.2012"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/personal_order_fr_right_label_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/personal_order_fr_right_text_delivery"
+                android:layout_marginTop="10dp"
+                android:text="Можно забрать:"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/personal_order_fr_right_text_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/personal_order_fr_right_text_delivery"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/personal_order_fr_right_label_address"
+                android:text="г. Москва ул. Полянка 24/8г. Москва ул. Полянка 24/8г. Москва ул. Полянка 24/8г. Москва ул. Полянка 24/8г. Москва ул. Полянка 24/8г. Москва ул. Полянка 24/8г. Москва ул. Полянка 24/8г. Москва ул. Полянка 24/8г. Москва ул. Полянка 24/8г. Москва ул. Полянка 24/8г. Москва ул. Полянка 24/8г. Москва ул. Полянка 24/8г. Москва ул. Полянка 24/8г. Москва ул. Полянка 24/8г. Москва ул. Полянка 24/8г. Москва ул. Полянка 24/8г. Москва ул. Полянка 24/8г. Москва ул. Полянка 24/8г. Москва ул. Полянка 24/8г. Москва ул. Полянка 24/8г. Москва ул. Полянка 24/8г. Москва ул. Полянка 24/8г. Москва ул. Полянка 24/8г. Москва ул. Полянка 24/8г. Москва ул. Полянка 24/8г. Москва ул. Полянка 24/8"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/personal_order_fr_right_label_payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/personal_order_fr_right_text_address"
+                android:layout_marginTop="10dp"
+                android:text="Оплата:"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/personal_order_fr_right_text_payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/personal_order_fr_right_text_address"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/personal_order_fr_right_label_payment"
+                android:text="наличными"
+                android:textSize="16dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Кол-во товаров:"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/basket_bg_multiple" />
+
+                <TextView
+                    android:id="@+id/personal_order_fr_right_text_goods_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="шт."
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Кол-во услуг: "
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/basket_bg_multiple" />
+
+                <TextView
+                    android:id="@+id/personal_order_fr_right_text_services_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="шт."
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Цена доставки:"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/basket_bg_multiple" />
+
+                <TextView
+                    android:id="@+id/personal_order_fr_right_text_delivery_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Р"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:paddingTop="15dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Итого:"
+                    android:textColor="#F48917"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:id="@+id/personal_order_fr_right_text_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="20 999"
+                    android:textColor="#F48917"
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/personal_order_fr_right_label_total_P"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Р"
+                    android:textColor="#F48917"
+                    android:textSize="24dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    -->
+
+</RelativeLayout>

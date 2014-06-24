@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center" >
+
+    <ImageView
+        android:id="@+id/catalog_grid_row_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/catalog_bg" />
+
+    <ImageView 
+        android:id="@+id/catalog_grid_row_empty_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/empty_view"
+        />
+    <TextView
+        android:id="@+id/catalog_grid_row_text_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/catalog_grid_row_empty_view"
+        android:layout_below="@id/catalog_grid_row_empty_view"
+        android:background="@drawable/bg_label_basket_price"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/catalog_grid_row_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/catalog_grid_row_img"
+        android:gravity="center"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

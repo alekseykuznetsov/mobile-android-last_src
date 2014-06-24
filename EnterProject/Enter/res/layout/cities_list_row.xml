@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Строка в списке городов -->
+
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+>
+	<CheckBox 
+		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:id="@+id/cities_list_row_check"
+  		android:text="asdasd"
+  		android:layout_marginLeft="10dip"
+  		android:layout_marginTop="10dip"
+  		android:layout_marginBottom="10dip"
+  		android:button="@drawable/checkbox_background"
+  		
+	/>
+	
+</LinearLayout>

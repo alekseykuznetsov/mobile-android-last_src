@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"    
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <ru.enter.widgets.TextViewNormal
+        android:id="@+id/personal_order_fr_left_list_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="У Вас нет ни одного заказа"
+        android:textSize="26dp"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/personal_order_fr_left_list_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:divider="@null"
+        android:overScrollMode="never"
+        android:choiceMode="singleChoice"
+        android:scrollbars="none" >
+    </ListView>
+
+</LinearLayout>

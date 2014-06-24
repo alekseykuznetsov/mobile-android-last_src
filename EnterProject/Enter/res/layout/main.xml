@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:panel="http://schemas.android.com/apk/res/ru.enter"
+android:id="@android:id/tabhost"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"         
+>
+	<LinearLayout 
+	android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+		<FrameLayout
+		android:id="@android:id/tabcontent"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_weight="1"
+		/>
+			<FrameLayout 
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"
+			android:gravity="center_vertical"
+			android:background="@drawable/tabbar"
+			>	
+				<LinearLayout
+				android:id="@+id/main_basket_icon" 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:layout_gravity="center_vertical|right"
+				android:layout_marginRight="12dip"
+				android:gravity="center_vertical"
+				>
+					<TextView
+					android:id="@+id/main_cost" 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:background="@drawable/main_basket_icon_cast_rouden_background"
+					android:textSize="13sp"
+					android:padding="3dip"
+					android:visibility="gone"
+					/>
+					<FrameLayout 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					>
+						<ImageView				
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:src="@drawable/pic_basket"
+						android:padding="10dip"
+						/>
+						<TextView 
+						android:id="@+id/main_product_count" 
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:background="@drawable/main_basket_icon_count_rouden_background"
+						android:textColor="@android:color/white"
+						android:layout_gravity="top|right"
+						android:textSize="10sp"
+						android:paddingLeft="4dip"
+						android:paddingRight="4dip"
+						android:visibility="gone"
+						/>
+			</FrameLayout>
+				
+		</LinearLayout>
+			
+			<ru.enter.widgets.Panel
+			android:id="@+id/main_slider_panel"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content" 
+			android:layout_gravity="center_vertical|left"
+			panel:handle="@+id/handle"
+			panel:content="@+id/content"
+			panel:position="left"
+			panel:animationDuration="500"
+		    panel:linearFlying="true"
+		    panel:openedHandle="@drawable/pic_arrow_2_1"
+		    panel:closedHandle="@drawable/btn_enter"
+			>	
+				<ImageButton
+				android:id="@+id/handle"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:minWidth="11dip"
+				/>
+				<HorizontalScrollView 
+				android:id="@+id/content"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:scrollbars="none"
+				android:gravity="center"
+				android:background="@drawable/tabbar"
+				android:fadeScrollbars="false"
+				android:paddingTop="5dp"
+				>	
+
+					<LinearLayout
+					    android:id="@+id/main_tab_host_frame"
+					    android:layout_width="fill_parent"
+					    android:layout_height="fill_parent"
+					    android:orientation="horizontal" >
+
+					    <TabWidget
+					        android:id="@android:id/tabs"
+					        android:layout_width="fill_parent"
+					        android:layout_height="wrap_content"
+					        android:gravity="center" />
+					</LinearLayout>
+
+				</HorizontalScrollView>
+			</ru.enter.widgets.Panel>
+			
+		</FrameLayout>
+	</LinearLayout>
+</TabHost>

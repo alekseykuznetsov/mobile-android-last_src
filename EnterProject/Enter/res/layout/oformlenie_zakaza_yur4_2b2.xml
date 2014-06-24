@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Рисунок 2.
+Ручной ввод адреса доставки. Тап по полю «Название улицы»
+открывает клавиатуру для ввода текста с кнопками «вперед» -
+на следующее поле (неактивна на последнем поле), «Назад» -
+на предыдущее поле (неактивна на первом поле), и кнопкой
+«завершить» - закрывает экранную клавиатуру.
+Выбор способа оплаты и данные об организации аналогично
+рисунку 1.
+ -->
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+    <FrameLayout
+	  android:id="@+id/yurlico_frame"
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:background="#00f000">
+	  	<TextView 
+		         android:text="Шаг 2.Адрес доставки и форма оплаты" 
+		         android:layout_height="wrap_content" 
+		         android:layout_width="wrap_content" 
+		         android:id="@+id/text" 
+		         android:layout_gravity="center"
+		         android:textStyle="bold"
+		         android:textSize = "20sp"
+		         android:textColor="@android:color/white"
+		         android:layout_marginLeft="5dp" />
+	</FrameLayout>
+			<TextView 
+    			 android:layout_width="fill_parent"
+    			 android:layout_height="wrap_content"
+				 android:text="Введите адрес для доставки товара" 
+		         android:id="@+id/adress_dostavki" 
+		         android:layout_gravity="center"
+		         android:textStyle="bold"
+		         android:textSize = "20sp"
+		         android:textColor="@android:color/white"
+		         android:layout_marginLeft="5dp"
+		         android:layout_marginRight="5dp"/>
+		      <EditText
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/street_edit_text"
+					android:hint="Введите название улицы"
+					android:layout_marginTop="10dp"
+				    />	   
+		<LinearLayout 
+				  android:layout_width="fill_parent"
+				  android:layout_height="wrap_content"
+				  android:orientation= "horizontal">
+				  <EditText
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:id="@+id/home_edit_text"
+					android:hint="дом"
+					android:layout_marginTop="10dp"
+				    />	
+				    <EditText
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:id="@+id/str_edit_text"
+					android:hint="стр."
+					android:layout_marginTop="10dp"
+				    />	
+				    <EditText
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:id="@+id/kvartira_edit_text"
+					android:hint="квартира"
+					android:layout_marginTop="10dp"
+				    />	
+		</LinearLayout> 
+		   <View
+					android:layout_width="fill_parent"
+					android:layout_height="2dip"			
+					android:background="@android:color/white"
+					/>
+				<TextView 
+					 android:layout_width="fill_parent"
+					 android:layout_height="wrap_content"
+					 android:text="Данные об организации" 
+			         android:id="@+id/text.2" 
+			         android:layout_gravity="center"
+			         android:textStyle="bold"
+			         android:textSize = "25sp"
+			         android:textColor="@android:color/white"
+			         android:layout_marginLeft="5dp"/>
+		         <EditText
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/name_organization_edit_text"
+					android:hint="Полное название организации"
+					android:layout_marginTop="10dp"
+				    />	
+				  <EditText
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/inn_edit_text"
+					android:hint="ИНН"
+					android:layout_marginTop="10dp"
+				    />
+				  <EditText
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:id="@+id/adress_edit_text"
+					android:hint="Юр.адрес. Название улицы"
+					android:layout_marginTop="10dp"
+				    />	
+				 <LinearLayout 
+				  android:layout_width="fill_parent"
+				  android:layout_height="wrap_content"
+				  android:orientation= "horizontal">
+				  <EditText
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:id="@+id/home_edit_text"
+					android:hint="дом"
+					android:layout_marginTop="10dp"
+				    />	
+				    <EditText
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:id="@+id/str_edit_text"
+					android:hint="стр"
+					android:layout_marginTop="10dp"
+				    />	
+				    <EditText
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:id="@+id/ofice_edit_text"
+					android:hint="офис"
+					android:layout_marginTop="10dp"
+				    />	
+				    <Button
+					 android:text="Далее" 
+			         android:layout_height="wrap_content" 
+			         android:layout_width="wrap_content" 
+			         android:id="@+id/dalee1_Button"              
+			         android:textStyle="bold"
+			         android:layout_gravity="right"
+			         />
+				  </LinearLayout>     	       
+</LinearLayout>

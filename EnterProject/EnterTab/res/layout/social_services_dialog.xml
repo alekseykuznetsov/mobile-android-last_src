@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Экран выбора социальной сети для отправки -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/social_services_dialog_root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="#ffffff"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="5dip" >
+
+    <Button
+        android:id="@+id/social_services_dialog_likefb"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Like Facebook"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/social_services_dialog_likevk"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Мне нравится ВКонтакте"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/social_services_dialog_fb"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Facebook"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/social_services_dialog_vk"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="ВКонтакте"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/social_services_dialog_twitter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Twitter"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/social_services_dialog_email"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="E-mail"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/social_services_dialog_exit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Отмена"
+        android:textStyle="bold" />
+
+</LinearLayout>

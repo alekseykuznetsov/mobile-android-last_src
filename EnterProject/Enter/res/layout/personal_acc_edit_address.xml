@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Разметка диалога по редактированию и удалению адресов доставки в личном кабинете, Анкете -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    android:background="@color/white"
+    android:id="@+id/personal_acc_edit_address_popup">
+    
+    <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:gravity="center_horizontal"
+    android:background="@drawable/item_gradient_background"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/personal_acc_edit_address_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/personal_acc_edit_address_edit_address"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true" 
+        android:textSize="13sp">
+    </EditText>
+<!-- 
+    <EditText
+        android:id="@+id/personal_acc_edit_address_edit_street"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:singleLine="true"
+        android:textSize="13sp"/>
+
+    <EditText
+        android:id="@+id/personal_acc_edit_address_edit_room"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:singleLine="true"
+        android:textSize="13sp"/>
+ -->
+
+    <Button
+        android:id="@+id/personal_acc_edit_address_edit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button" 
+        android:background="@drawable/selector_btn_orange_solid"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:padding="5dp"/>
+    
+    </LinearLayout>
+
+</LinearLayout>

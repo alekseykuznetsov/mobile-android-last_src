@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="horizontal"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:gravity="center_vertical"
+  android:padding="10dp"
+  android:background="@color/white">
+  	<Button 
+  	android:layout_width="wrap_content" 
+  	android:layout_height="wrap_content" 
+  	android:background="@drawable/btn_adr_del_background" 
+  	android:id="@+id/personal_acc_blank_list_row_delete">
+  	</Button>
+  	
+  	<!-- Здесь использована минимальная ширина в 1000дип, из-за того что
+  	по каким-то неведомым причинам вес не работал корректно -->
+  	
+    <TextView 
+    android:text="г.Казань, улица Пушкина" 
+    android:id="@+id/personal_acc_blank_list_row_adress" 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:maxLines="2"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:textColor="@color/black"
+    android:ellipsize="end"
+    android:minWidth="1000dp">
+    </TextView>
+    <Button 
+    android:id="@+id/personal_acc_blank_list_row_edit" 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    android:background="@drawable/btn_adr_edit_background">
+    </Button>
+    
+</LinearLayout>

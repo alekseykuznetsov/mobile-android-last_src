@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <LinearLayout
+        android:id="@+id/personal_edit_info_linear_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:padding="15dp" >
+
+        <ru.enter.widgets.EditTextNormal
+            android:id="@+id/personal_edit_info_edittext_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/product_list_bg_field"
+            android:ems="10"
+            android:hint="Имя *"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:textSize="20dp" />
+
+        <ru.enter.widgets.EditTextNormal
+            android:id="@+id/personal_edit_info_edittext_patronymic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/product_list_bg_field"
+            android:ems="10"
+            android:hint="Отчество"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:textSize="20dp" />
+
+        <ru.enter.widgets.EditTextNormal
+            android:id="@+id/personal_edit_info_edittext_lastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/product_list_bg_field"
+            android:ems="10"
+            android:hint="Фамилия"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ru.enter.widgets.TextViewNormal
+                android:id="@+id/personal_edit_info_label_genre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="Пол:"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/personal_edit_info_radiongroup_genre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <ru.enter.widgets.RadioButtonNormal
+                    android:id="@+id/personal_edit_info_radiobutton_male"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/order_radiobutton_selector"
+                    android:checked="false"
+                    android:text="Мужской"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <ru.enter.widgets.RadioButtonNormal
+                    android:id="@+id/personal_edit_info_radiobutton_female"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/order_radiobutton_selector"
+                    android:checked="false"
+                    android:text="Женский"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ru.enter.widgets.EditTextNormal
+                android:id="@+id/personal_edit_info_edittext_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/product_list_bg_field"
+                android:ems="10"
+                android:hint="email"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textSize="20dp" />
+
+            <ru.enter.widgets.TextViewNormal
+                android:id="@+id/personal_edit_info_label_OR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center_horizontal"
+                android:text="   "
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <ru.enter.widgets.EditTextNormal
+                android:id="@+id/personal_edit_info_edittext_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/product_list_bg_field"
+                android:ems="10"
+                android:hint="телефон *"
+                android:paddingLeft="10dp"
+                android:inputType="phone"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <ru.enter.widgets.EditTextNormal
+            android:id="@+id/personal_edit_info_edittext_additional_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/product_list_bg_field"
+            android:ems="10"
+            android:hint="Дополнительный (домашний) телефон"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:inputType="phone"
+            android:textSize="20dp" />
+
+        <ru.enter.widgets.EditTextNormal
+            android:id="@+id/personal_edit_info_edittext_skype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/product_list_bg_field"
+            android:ems="10"
+            android:hint="Skype"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:textSize="20dp" />
+
+        <ru.enter.widgets.EditTextNormal
+            android:id="@+id/personal_edit_info_text_birth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/product_list_bg_field"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Дата рождения"
+            android:textColor="#888888"
+            android:textSize="20dp" />
+
+        <ru.enter.widgets.EditTextNormal
+            android:id="@+id/personal_edit_info_edittext_work"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/product_list_bg_field"
+            android:ems="10"
+            android:hint="Род деятельности"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="#ffffff"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1" />
+
+            <ru.enter.widgets.ButtonBold
+                android:id="@+id/personal_edit_info_button_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.9"
+                android:background="@drawable/selector_btn_solid_orange"
+                android:shadowColor="#000000"
+                android:shadowDx="0"
+                android:shadowDy="-1"
+                android:shadowRadius="1"
+                android:text="Сохранить"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/personal_edit_info_progress_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/personal_edit_info_linear_main"
+        android:layout_alignParentTop="true"
+        android:background="#D9000000"
+        android:clickable="true"
+        android:visibility="gone" >
+
+        <ProgressBar
+            style="@android:style/Widget.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminate="true" />
+    </FrameLayout>
+
+</RelativeLayout>

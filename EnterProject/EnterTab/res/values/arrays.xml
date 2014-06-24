@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="toplevel_activities_names">
+        <item>Каталог</item>
+        <item>Поиск</item>
+        <item>Сканер</item>
+        <item>Моя корзина</item>
+        <item>Мой кабинет</item>
+        <item>Магазины</item>
+        <item>Услуги</item>
+        <item>О компании</item>
+        <item>Обратная связь</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/galleryContainer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+    
+    <include
+        android:id="@+id/catalog_ac_relative_header"
+        android:layout_alignParentTop="true"        
+        layout="@layout/shop_locator_widget" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/itemGallery"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/catalog_ac_relative_header"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/btnImagePrev"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignBaseline="@+id/itemGallery"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/btn_arr_l" />
+
+    <Button
+        android:id="@+id/btnImageNext"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignBaseline="@+id/itemGallery"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/btn_arr_r" />
+
+    <ImageView
+        android:id="@+id/product_card_ac_lable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/catalog_ac_relative_header"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:visibility="gone" />
+    
+    <ImageButton
+        android:id="@+id/product_card_ac_img_gallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/catalog_ac_relative_header"
+        android:layout_alignParentRight="true"        
+        android:background="@null"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="5dp"
+        android:src="@drawable/product_card_icn_photo"
+        />
+    
+    <ImageButton
+        android:id="@+id/product_card_ac_img_360"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+   		android:layout_toLeftOf="@id/product_card_ac_img_gallery"
+        android:layout_below="@id/catalog_ac_relative_header"
+        android:background="@null"
+        android:paddingRight="5dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:src="@drawable/product_card_icn_360_orange" />
+    
+
+</RelativeLayout>

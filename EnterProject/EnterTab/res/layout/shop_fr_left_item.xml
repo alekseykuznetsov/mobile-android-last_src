@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="15dp" >
+
+    <!-- android:background="@drawable/shop_list_item_selector"
+    for unknown reasons selector doesnot work if fragment has no focus.
+    replaced by dumb solution with markedId. @see adapter & list fragment.
+     -->
+     
+    <ru.enter.widgets.TextViewBold
+        android:id="@+id/shop_left_fr_item_text_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textColor="@color/black"/>
+
+    <ru.enter.widgets.TextViewNormal
+        android:id="@+id/shop_left_fr_item_text_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="1"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+</LinearLayout>

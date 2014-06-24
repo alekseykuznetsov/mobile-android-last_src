@@ -1,0 +1,69 @@
+<resources>
+	    <string name="description">EnterTablet</string>
+    <string name="app_name">Enter</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main_menu">Enter</string>
+    <string name="buy_service">Купить услугу</string>
+    <string name="ruble_symbol">P</string>
+    <string name="cities_holder_tag">cities_holder</string>
+    <string name="cities_bean_tag">cities_bean</string>
+
+    <!-- for maps -->
+    <string name="enter">Enter</string>
+    <string name="marker_route">Построить маршрут</string>
+    <string name="marker_info">Информация</string>
+    
+    <!-- actionbar -->
+    <string name="actionbar_catalog">Каталог</string>
+    <string name="actionbar_search">Поиск</string>
+    <string name="actionbar_shops">Магазины</string>
+    <string name="actionbar_f1">Услуги</string>
+    <string name="actionbar_basket">Корзина</string>
+    <string name="actionbar_personal">Мой кабинет</string>
+    <string name="actionbar_qr">Сканер</string>
+    <string name="actionbar_about">О компании</string>
+    <string name="actionbar_feedback">Обратная связь</string>
+    <string name="actionbar_search_results">Результаты</string>
+    <string name="actionbar_gallery3d">3D-Модель</string>
+    
+        <!-- Product card -->
+    <string name="product_card_article">Артикул #%1$s</string>
+    <string name="product_card_aviliable_yes">Есть в наличии</string>
+    <string name="product_card_aviliable_no">Нет в наличии</string>
+    <string name="product_card_aviliable_only_in_shops">Только в магазинах</string>
+    <string name="product_card_aviliable_only_in_show_window">Только на витрине</string>
+    <string name="product_card_button_buy">Купить</string>
+    <string name="product_card_button_share">Поделиться</string>
+    <string name="product_card_delivery">Можно заказать сейчас %1$s(%2$s)</string>
+    <!-- product card gallery -->
+    <string name="product_card_gallery_next">&gt;&gt;</string>
+    <string name="product_card_gallery_previous">&lt;&lt;</string>
+
+    <!-- product shop quanity -->
+    <string name="product_card_quanity_none">Нет</string>
+    <string name="product_card_quanity_low">Мало</string>
+    <string name="product_card_quanity_average">Средне</string>
+    <string name="product_card_quanity_high">Много</string>
+     <!-- Tab titles -->
+
+	<string name="tab_title_options">ХАРАКТЕРИСТИКИ</string>
+    <string name="tab_title_decription">ОПИСАНИЕ</string>
+    <string name="tab_title_accessories">АКСЕССУАРЫ</string>
+    <string name="tab_title_otheritems">СМЕЖНЫЕ ТОВАРЫ</string>
+    <string name="tab_title_wheretobuy">ГДЕ КУПИТЬ?</string>
+    <string name="tab_title_f1">УСЛУГИ F1</string>
+    
+    
+    <!-- Keys for Base Product Fragment -->
+    <string name="grid_key_id">convert_view</string>
+    <string name="grid_key_item_pos">item_pos</string>
+    <string name="grid_key_holder">holder</string>
+    
+    <!-- Keys for product model list -->
+    <string name="list_key_product_model_holder">product_model_holder</string>
+    <string name="list_key_product_model_id">product_model_id</string>
+    
+   
+    
+</resources>

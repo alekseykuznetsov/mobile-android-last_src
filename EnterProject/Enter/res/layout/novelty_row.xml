@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <TextView 
+    	android:id="@+id/novelty_row_title"
+        android:layout_width="wrap_content"
+    	android:layout_height="50dip"
+    	android:paddingRight="40dip"
+    	android:layout_marginLeft="15dip"
+    	android:gravity="center_vertical"
+    	android:text="asdas"/>
+   	<TextView 
+    	android:id="@+id/novelty_row_count"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_marginTop="10dip"
+    	android:layout_alignRight="@+id/novelty_row_title"
+    	android:layout_alignTop="@+id/novelty_row_title"
+    	android:background="@color/red"
+    	android:text="5"/>
+
+    
+</RelativeLayout>

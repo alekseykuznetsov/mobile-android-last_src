@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    >
+
+    <FrameLayout
+        android:id="@+id/service_card_frame"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </FrameLayout>
+    
+	    <ScrollView 
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:scrollbars="none">
+	        
+	    <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:orientation="vertical"
+	        android:gravity="center_horizontal" >   
+	
+		    <ImageView
+		        android:id="@+id/service_card_image"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:src="@drawable/catalog_bg" 
+		        android:layout_marginBottom="20dp"
+		        android:layout_marginTop="20dp"/>
+		
+		    <TextView
+		        android:id="@+id/service_card_title"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:textSize="20sp"
+		        android:paddingLeft="20dp"
+		        android:paddingRight="20dp"
+		        />
+
+		    <LinearLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content" 
+		        android:paddingBottom="15dp"
+		        android:paddingLeft="20dp"
+		        android:paddingRight="20dp"
+		        android:paddingTop="15dp"
+		        android:orientation="horizontal">
+
+		        <TextView
+		            android:text="Цена: "
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textAppearance="?android:attr/textAppearanceMedium" 
+		            android:textStyle="bold"/>
+		        
+		        <TextView
+		            android:id="@+id/service_card_price"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textAppearance="?android:attr/textAppearanceMedium" 
+		            android:textStyle="bold"/>
+		        
+		         <TextView
+		            android:id="@+id/service_card_ruble"
+		            android:text=" p"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textAppearance="?android:attr/textAppearanceMedium" 
+		            android:visibility="gone"/>
+
+		         <Button
+		             android:id="@+id/service_card_btn_buy"
+		             android:layout_width="wrap_content"
+		             android:layout_height="wrap_content"
+		             android:text="Купить"
+		             android:textColor="@color/white"
+		             android:background="@drawable/selector_btn_orange_solid" 
+		             android:layout_marginLeft="10dp"/>
+
+		    </LinearLayout>
+		
+		    <View
+		        android:layout_width="wrap_content"
+		        android:layout_height="2px" 
+		        android:background="@color/gray"
+		        android:layout_marginTop="10dp"
+		        android:layout_marginBottom="20dp"
+		        android:layout_marginLeft="20dp"
+		        android:layout_marginRight="20dp"/>
+		    <TextView
+		        android:id="@+id/service_card_desc"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:paddingLeft="20dp"
+		        android:paddingRight="20dp"
+		        android:paddingBottom="20dp"
+		        android:textSize="18sp"
+		         />
+	    </LinearLayout> 
+	</ScrollView>
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Элемент на экране списка товаров -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"    	
+    >
+    <ImageView
+        android:id="@+id/pod_catalog_row_img"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dip"
+		android:layout_marginRight="10dip"
+		android:layout_marginTop="5dip"
+		android:layout_marginBottom="5dip"
+        android:background="@drawable/product_card_image_background"
+        android:src="@drawable/cap"
+        android:layout_gravity="center_vertical" />
+	
+	<TextView 
+    	android:id="@+id/pod_catalog_row_title"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_gravity="center_vertical"
+    	android:layout_toRightOf="@+id/pod_catalog_row_img" 
+    	android:layout_toLeftOf="@+id/pod_catalog_row_arr"
+    	android:gravity="left"
+    	android:paddingTop="15dip"
+    	android:paddingRight="15dip"
+    	android:paddingBottom="15dip"
+    	android:textSize="20dip" />
+	
+	<ImageView 
+	    android:id="@+id/pod_catalog_row_arr"
+	    android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_alignParentRight="true"
+    	android:layout_centerVertical="true"
+    	android:layout_margin="5dip"
+    	android:background="@drawable/pic_arrow"
+	    />
+	
+</RelativeLayout>

@@ -1,0 +1,139 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ru.enter"
+    android:versionCode="1444210"
+    android:versionName="2.0.10" >
+
+    <supports-screens
+        android:xlargeScreens="true" 
+        android:largeScreens="false"
+        android:normalScreens="false"
+        android:smallScreens="false"
+        android:requiresSmallestWidthDp="720"
+        />
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="14" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <!-- no label in actionbar -->
+
+    <application
+        android:name=".ApplicationTablet"
+        android:icon="@drawable/icn_logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/CustomTheme" >
+        <uses-library android:name="com.google.android.maps" />
+
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".SplashActivity"
+            android:noHistory="true"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AboutActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".AuthorizationActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:noHistory="true"
+            android:theme="@style/AuthDialogStyle" />
+        <activity
+            android:name=".BasketActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".BannersActivity" />
+        <activity android:name=".BannerWebActivity" 
+            android:configChanges="orientation|screenSize"/>
+        <activity
+            android:name=".CatalogActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask" />
+        <activity android:name=".OrderActivity" />
+        <activity android:name=".OrderOneClickActivity" />
+        <activity android:name=".OrderCompleteBuyNowActivity" />
+        <activity android:name=".OrderCompleteActivity" />
+        <activity android:name=".OrderCompleteOneClickActivity" />
+        <activity
+            android:name=".PersonalActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask" />
+        <activity android:name=".ProductCardActivity" />
+        <activity android:name=".ProductCardGalleryActivity" 
+            android:configChanges="orientation|screenSize"/>
+        <activity android:name=".ProductCard360Activity" />
+        <activity
+            android:name=".ScanerActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" />
+        <activity android:name=".ScanerResultActivity" />
+        <activity
+            android:name=".SearchActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ServicesActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ShopsActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".Maps"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+            <intent-filter>
+                <action android:name="ru.enter.maps.receiver.marker" />
+                <action android:name="ru.enter.maps.receiver.zoom" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".dialogs.SocialServicesDialog"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@style/Theme.CustomDialog" />
+        <activity
+            android:name="ru.ideast.SocialServices.SendTwitter"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@style/Theme.CustomDialogTwitter" />
+        <activity
+            android:name="ru.ideast.shopitemfragment.tabs.ProductOptionsActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="ru.ideast.shopitemfragment.tabs.ProductDescriptionActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="ru.ideast.shopitemfragment.tabs.ProductServicesActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="ru.ideast.shopitemfragment.tabs.ProductShopsActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="ru.ideast.shopitemfragment.tabs.AccessoriesListTabActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="ru.ideast.shopitemfragment.tabs.RelativeGoodsListTabActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+    </application>
+
+</manifest>

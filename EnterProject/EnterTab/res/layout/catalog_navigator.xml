@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:id="@+id/catalog_navigator_category_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" 
+        android:orientation="horizontal"
+        android:background="@drawable/dropdown_ic_arrow_grey_for_text"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp">
+
+        <ImageView
+            android:id="@+id/catalog_navigator_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitXY"/>
+
+        <ru.enter.widgets.TextViewBrash
+            android:id="@+id/catalog_navigator_category_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="italic" 
+            android:paddingLeft="10dp"/>
+
+    </LinearLayout>
+	
+    <ru.enter.widgets.TextViewBrash
+        android:id="@+id/catalog_navigator_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/about_bank_gray"
+        android:textSize="24dp"
+        android:layout_marginLeft="10dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textStyle="italic" />
+
+</merge>

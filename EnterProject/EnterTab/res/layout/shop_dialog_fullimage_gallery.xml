@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+     >
+
+    <ru.enter.widgets.TextViewNormal
+        android:id="@+id/empty"
+        android:layout_width="550dp"
+        android:layout_height="330dp"
+        android:gravity="center"
+        android:text="Для данного магазина нет фотографий"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:visibility="gone" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/itemShopGallery"
+        android:layout_width="550dp"
+        android:layout_height="330dp" 
+        android:background="@drawable/tmp_3"/>
+
+</LinearLayout> <!-- <ImageView -->
+<!-- android:layout_width="wrap_content" -->
+<!-- android:layout_height="wrap_content" -->
+<!-- android:scaleType="fitXY" -->
+<!-- android:background="@drawable/shop_top_img" /> -->

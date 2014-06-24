@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Рисунок 1.:
+Поля для ввода данных пользователя (пользователь
+неавторизован. Тап по любому из 4-х полей открывает клавиатуру
+для ввода текста (для поля email - клавиатура для ввода email) с
+кнопками «вперед» - на следующее поле (неактивна на последнем
+поле), «Назад» - на предыдущее поле (неактивна на первом поле), и
+кнопкой «завершить» - закрывает экранную клавиатуру.
+Пользователь выбрал «Самовывоз» на экране 4.1 - следовательно
+он может выбрать магазин из списка(открывается на барабане)
+или найти ближайший - кнопка «геолокация» - экран 4.3
+варианты выбора оплаты (формируются динамически по API):
+- Карта в приложении (при выборе этого пункта кнопка
+«далее» ведет на экран 4.2.2)
+- Карта при получения курьеру
+- Наличные курьеру
+- Электронные деньги (на экран 4.2.1
+ -->
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+    <FrameLayout
+	  android:id="@+id/header_frame"
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:background="#00f000">
+	  	<TextView 
+		         android:text="Шаг 2.Адрес доставки и форма оплаты" 
+		         android:layout_height="wrap_content" 
+		         android:layout_width="wrap_content" 
+		         android:id="@+id/zagolovok" 
+		         android:layout_gravity="center"
+		         android:textStyle="bold"
+		         android:textSize = "15sp"
+		         android:textColor="@android:color/black"
+		         android:layout_marginLeft="5dp" />
+	</FrameLayout>
+	<LinearLayout 
+		  android:orientation="horizontal"
+		  android:layout_width="fill_parent"
+		  android:layout_height="wrap_content">
+		  	<EditText
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/name0_edit_text"
+				android:hint="Михаил"
+				android:layout_marginTop="10dp"
+				/>
+			<EditText
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/name02_edit_text"
+				android:hint="Михайлов"
+				android:layout_marginTop="10dp"
+				/>
+	</LinearLayout>
+	<LinearLayout 
+		  android:orientation="horizontal"
+		  android:layout_width="fill_parent"
+		  android:layout_height="wrap_content">
+		  	<EditText
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/name03_edit_text"
+				android:hint="89275322499"
+				android:layout_marginTop="10dp"
+				/>
+				<TextView 
+		         android:text="или" 
+		         android:layout_height="wrap_content" 
+		         android:layout_width="wrap_content" 
+		         android:id="@+id/zagolovok11" 
+		         android:layout_gravity="center"
+		         android:textStyle="bold"
+		         android:textSize = "15sp"
+		         android:textColor="@android:color/white"
+		         android:layout_marginLeft="5dp" />
+			<EditText
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/name04_edit_text"
+				android:hint="emal@mail.ru"
+				android:layout_marginTop="10dp"
+				/>
+	</LinearLayout>	
+				<View
+					android:layout_width="fill_parent"
+					android:layout_height="2dip"			
+					android:background="@android:color/white"
+					/>
+				<TextView 
+				 android:layout_width="fill_parent"
+				 android:layout_height="wrap_content"
+				 android:text="Выберите магазин из списка или воспользуйтесь геолокацией для поиска ближайшего магазина" 
+		         android:id="@+id/text1.1" 
+		         android:layout_gravity="center"
+		         android:textStyle="bold"
+		         android:textSize = "15sp"
+		         android:textColor="@android:color/white"
+		         android:layout_marginLeft="5dp"
+		         />
+		    <LinearLayout 
+	   		  android:orientation="horizontal"
+			  android:layout_width="fill_parent"
+			  android:layout_height="wrap_content"
+			  >	
+				    <Spinner 
+				    android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:id="@+id/spinner0"
+			        />
+					<Button
+					 android:text="Геолокация" 
+			         android:layout_height="wrap_content" 
+			         android:layout_width="wrap_content" 
+			         android:id="@+id/geolokaciya0_Button"              
+			         android:textStyle="bold"
+			         />
+			</LinearLayout>
+		<LinearLayout 
+				  android:layout_width="fill_parent"
+				  android:layout_height="wrap_content"
+				  android:orientation= "vertical">
+			<TextView 
+				 android:layout_width="fill_parent"
+				 android:layout_height="wrap_content"
+				 android:text="Способ оплаты" 
+		         android:id="@+id/text1.2" 
+		         android:layout_gravity="center"
+		         android:textStyle="bold"
+		         android:textSize = "15sp"
+		         android:textColor="@android:color/white"
+		         android:layout_marginLeft="5dp"/>
+			 <CheckBox 
+					android:id="@+id/checkBox01" 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+					android:text="  картой в приложении" 
+					android:textStyle="bold"
+					android:textSize = "20sp"
+					android:textColor="@android:color/white"
+					android:layout_marginLeft="10dp"
+					/>
+					<CheckBox 
+					android:id="@+id/checkBox02" 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+					android:text="  Карта курьеру при получении" 
+					android:textStyle="bold"
+					android:textSize = "20sp"
+					android:textColor="@android:color/white"
+					android:layout_marginLeft="10dp"
+					/>
+					<CheckBox 
+					android:id="@+id/checkBox03" 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+					android:text="  Наличные курьеру" 
+					android:textStyle="bold"
+					android:textSize = "20sp"
+					android:textColor="@android:color/white"
+					android:layout_marginLeft="10dp"
+					/>
+					<CheckBox 
+					android:id="@+id/checkBox04" 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+					android:text="  Электронные деньги" 
+					android:textStyle="bold"
+					android:textSize = "20sp"
+					android:textColor="@android:color/white"
+					android:layout_marginLeft="10dp"
+					/>
+					<Button
+					 android:text="Далее" 
+			         android:layout_height="wrap_content" 
+			         android:layout_width="wrap_content" 
+			         android:id="@+id/dalee0_Button"              
+			         android:textStyle="bold"
+			         android:layout_gravity="right"
+			         />
+			         </LinearLayout>
+</LinearLayout>

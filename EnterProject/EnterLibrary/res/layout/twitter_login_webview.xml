@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Вебвьюшка для логина в Твиттер -->
+
+<RelativeLayout 
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent" 
+	android:orientation="vertical"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+ 	<WebView
+		android:id="@+id/twitter_login_view" 
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent"
+		android:paddingBottom="47dip"
+		/>
+	<RelativeLayout 
+		android:layout_width="fill_parent" 
+		android:layout_height="45dip"
+		android:layout_alignBottom="@+id/twitter_login_view"  
+		android:background="#50000000">
+		<Button
+			android:id="@+id/twitter_login_next"
+			android:text="Далее"
+			android:layout_width="wrap_content"
+			android:layout_height="40dip"
+			android:layout_centerInParent="true"
+		/>
+	</RelativeLayout>
+	<LinearLayout
+		android:id="@+id/twitter_progress"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical"
+		android:gravity="center"
+		android:background="#aaffffff"	
+		android:clickable="true"	
+		>
+		<TextView
+			android:text="Load..."
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+		/>
+		<ProgressBar	     
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"	 
+			android:indeterminate="true"		
+		/>
+
+	 </LinearLayout>
+</RelativeLayout>

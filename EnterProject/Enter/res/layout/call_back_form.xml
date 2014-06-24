@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+    <LinearLayout 
+		   android:layout_width="fill_parent"
+		   android:layout_height="wrap_content"
+		   android:orientation="horizontal"
+		    >
+    	<TextView 
+		    android:text="Имя : " 
+			android:layout_height="wrap_content" 
+			android:layout_width="wrap_content" 
+			android:id="@+id/name.1" 
+			android:textStyle="bold"
+			android:textSize = "25sp"
+			android:textColor="@android:color/white"
+			android:gravity="center"
+		    />
+   		 <EditText
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/name1_edit_text"
+				android:hint="Денис"
+				/>
+    </LinearLayout>
+    <LinearLayout 
+		   android:layout_width="fill_parent"
+		   android:layout_height="wrap_content"
+		   android:orientation="horizontal"
+		    >
+    	<TextView 
+		    android:text="Телефон : " 
+			android:layout_height="wrap_content" 
+			android:layout_width="wrap_content" 
+			android:id="@+id/phone.1" 
+			android:textStyle="bold"
+			android:textSize = "25sp"
+			android:textColor="@android:color/white"
+			android:gravity="center"
+		    />
+   		 <EditText
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/name2_edit_text"
+				android:hint="+7 919 345 45 54"
+				/>
+    </LinearLayout>
+    <LinearLayout 
+		   android:layout_width="fill_parent"
+		   android:layout_height="wrap_content"
+		   android:orientation="horizontal"
+		    >
+    	<TextView 
+		    android:text="Дата : " 
+			android:layout_height="wrap_content" 
+			android:layout_width="wrap_content" 
+			android:id="@+id/data.1" 
+			android:textStyle="bold"
+			android:textSize = "25sp"
+			android:textColor="@android:color/white"
+			android:gravity="center"
+		    />
+   		 <EditText
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/name3_edit_text"
+				android:hint="12 октября 2011"
+				/>
+    </LinearLayout>
+    	<LinearLayout 
+		   android:layout_width="fill_parent"
+		   android:layout_height="wrap_content"
+		   android:orientation="horizontal"
+		    >
+    	<TextView 
+		    android:text="Время : " 
+			android:layout_height="wrap_content" 
+			android:layout_width="wrap_content" 
+			android:id="@+id/time.1" 
+			android:textStyle="bold"
+			android:textSize = "25sp"
+			android:textColor="@android:color/white"
+			android:gravity="center"
+		    />
+   		 <EditText
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/name4_edit_text"
+				android:hint="14:40"
+				/>
+    </LinearLayout>
+    			<Button
+					 android:text="Заказать звонок" 
+			         android:layout_height="wrap_content" 
+			         android:layout_width="wrap_content" 
+			         android:id="@+id/geolokaciya_Button"              
+			         android:textStyle="bold"
+			         android:layout_gravity="center"
+			         />
+</LinearLayout>

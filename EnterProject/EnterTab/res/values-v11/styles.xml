@@ -1,0 +1,122 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <color name="custom_theme_color">@color/black</color>
+
+    <style name="CustomTheme" parent="android:style/Theme.Holo">
+        <item name="android:homeAsUpIndicator">@drawable/icn_little_arrow_left</item>
+        <item name="android:actionOverflowButtonStyle">@style/customActionBarOverflow</item>
+        <item name="android:actionBarStyle">@style/customActionBarStyle</item>
+        <item name="android:actionButtonStyle">@style/customActionButtonStyle</item>
+
+        <!-- list -->
+        <!-- <item name="android:actionDropDownStyle">@style/customDropDownNav</item> -->
+        <item name="android:popupMenuStyle">@style/customPopupMenu</item>
+        <item name="android:dropDownListViewStyle">@style/customDropDownListView</item>
+        <!-- <item name="android:dropDownListViewStyle">@style/customSpinnerStyle</item> -->
+        <!-- tabs -->
+        <item name="android:actionBarTabTextStyle">@style/customActionBarTabTextStyle</item>
+        <item name="android:actionBarTabStyle">@style/customActionBarTabStyle</item>
+        <item name="android:actionBarTabBarStyle">@style/customActionBarTabBarStyle</item>
+        <!-- text -->
+        <item name="android:actionMenuTextColor">@color/white</item>
+        
+    </style>
+
+    <!-- ########################## TABS ########################### -->
+    <!-- style for the tab text -->
+    <style name="customActionBarTabTextStyle">
+        <item name="android:textColor">@drawable/actionbar_tab_text_selector</item>
+        <item name="android:textSize">16sp</item>
+        <!-- <item name="android:typeface">sans</item> -->
+    </style>
+    <!-- style for the tabs -->
+    <style name="customActionBarTabStyle" parent="@android:style/Widget.Holo.Light.Tab">
+        <item name="android:background">@drawable/actionbar_tab_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+    </style>
+    <!-- style for tabbar divider, DONT work however -->
+    <style name="customActionBarTabBarStyle" parent="@android:style/Widget.Holo.Light.TabWidget">
+        <item name="android:divider">@drawable/btn_bg_action_separator</item>
+        <item name="android:showDividers">middle</item>
+        <item name="android:dividerPadding">10dp</item>
+    </style>
+
+    <!-- ######################## LIST ################################ -->
+    <style name="customSpinnerStyle" parent="android:style/Widget.ListView.DropDown">
+        <item name="android:textAppearance">@style/customActionBarTextStyle</item>
+        <item name="android:divider">@color/actionbar_popup_border</item>
+        <item name="android:dividerHeight">1dp</item>
+    </style>
+
+    <!-- style the items within the overflow menu -->
+    <style name="customDropDownListView" parent="android:style/Widget.Holo.ListView.DropDown">
+        <item name="android:background">@drawable/actionbar_popup_shape</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAppearance">@style/customActionBarTextStyle</item>
+        <item name="android:divider">@color/actionbar_popup_border</item>
+        <item name="android:dividerHeight">1dp</item>
+        <item name="android:listSelector">@android:drawable/list_selector_background</item>
+    </style>
+
+    <style name="customDropDownNav" parent="@android:style/Widget.Spinner.DropDown">
+        <item name="android:background">@color/actionbar</item>
+        <item name="android:dropDownVerticalOffset">0dp</item>
+        <item name="android:textAppearance">@style/customActionBarTextStyle</item>
+        <item name="android:popupBackground">@drawable/actionbar_popup_shape</item>
+        <!--
+        saved snippet
+        <item name="android:background">@android:drawable/spinner_background_holo_dark</item>
+	    <item name="android:dropDownSelector">@android:drawable/list_selector_holo_dark</item>
+	    <item name="android:popupBackground">@android:drawable/menu_dropdown_panel_holo_dark</item>
+	    <item name="android:dropDownVerticalOffset">0dip</item>
+	    <item name="android:dropDownHorizontalOffset">0dip</item>
+	    <item name="android:dropDownWidth">wrap_content</item>
+	    <item name="android:popupPromptView">@android:layout/simple_dropdown_hint</item>
+	    <item name="android:gravity">left|center_vertical</item>
+        -->
+    </style>
+    <!-- #################################### BAR ########################## -->
+    <style name="customActionBarTextStyle" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <!-- style the overflow menu -->
+    <style name="customPopupMenu" parent="android:style/Widget.Holo.Light.ListPopupWindow">
+        <item name="android:popupBackground">@drawable/actionbar_popup_shape</item>
+        <item name="android:textAppearance">@style/customActionBarTextStyle</item>
+    </style>
+    <!-- actionbar style -->
+    <style name="customActionBarStyle" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:titleTextStyle">@style/customActionBarTextStyle</item>
+        <item name="android:background">#222222</item>
+    </style>
+
+    <!-- default selector for menuitems -->
+    <style name="customActionButtonStyle" parent="@android:style/Widget.Holo.Light.ActionButton">
+		<item name="android:background">@drawable/selector_btn_dropdown_action_bar</item>
+    </style>
+
+    <!-- replacement of default menu buton -->
+    <style name="customActionBarOverflow" parent="android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:src">@drawable/icn_actionbar_menu</item>
+    </style>
+
+    <!-- ############################################################################### -->
+
+    <!-- auth dialog -->
+    <style name="AuthDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowTitleStyle">@style/AuthDialogTitleStyle</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+
+    <style name="AuthDialogTitleStyle" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:background">#222222</item>
+    </style>
+
+</resources>

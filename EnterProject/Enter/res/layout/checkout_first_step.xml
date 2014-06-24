@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/checkout_first_step_title_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/checkout_title_background"
+            android:gravity="center"
+            android:minHeight="40dip"
+            android:text="@string/checkout_first_step_title_text"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/checkout_gray_background"
+            android:paddingBottom="5dip"
+            android:paddingLeft="10dip"
+            android:paddingTop="5dip"
+            android:text="Способ получения заказа:"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dip"
+            android:paddingLeft="5dip"
+            android:paddingTop="2dip"
+            android:text="В каком городе будете получать заказ?"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dip" >
+
+            <TextView
+                android:id="@+id/checkout_first_step_current_city_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:drawable/edit_text"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/checkout_first_step_change_current_city_btn"
+                style="@style/customButtonBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Сменить "
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/checkout_gray_background"
+            android:paddingBottom="5dip"
+            android:paddingLeft="10dip"
+            android:paddingTop="5dip"
+            android:text="Вы покупаете:"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <RadioGroup
+            android:id="@+id/checkout_first_step_payment_rg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:visibility="gone" >
+
+            <RadioButton
+                android:id="@+id/checkout_first_step_payment_rb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/radiobutton_background"
+                android:checked="true"
+                android:text="для себя (как частное лицо)"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/checkout_first_step_payment_rb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/radiobutton_background"
+                android:text="для компании (на юридическое лицо)"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/checkout_gray_background"
+            android:paddingBottom="5dip"
+            android:paddingLeft="10dip"
+            android:paddingTop="5dip"
+            android:text="Способ доставки:"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="3px"
+            android:background="#ababab" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dip"
+            android:paddingLeft="5dip"
+            android:paddingTop="5dip"
+            android:text="Выберите способ получения заказа:"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/checkout_first_step_delivery_rg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip" >
+
+            <!--
+            >RadioButton 
+			android:id="@+id/checkout_first_step_delivery_rb1" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:text="Экспресс-доставка" 
+			android:textSize="14sp"
+			android:textColor="@android:color/black"
+			android:button="@drawable/radiobutton_background"
+			android:checked="true"
+			android:visibility="gone"
+			/>	
+			<RadioButton 
+			android:id="@+id/checkout_first_step_delivery_rb2" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:text="Доставка заказа курьером" 
+			android:textSize="14sp"
+			android:textColor="@android:color/black"
+			android:button="@drawable/radiobutton_background"
+			android:checked="true"
+			/>
+			<RadioButton 
+			android:id="@+id/checkout_first_step_delivery_rb3" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:text="Самостоятельно заберу в магазине" 
+			android:textSize="14sp"
+			android:textColor="@android:color/black"
+			android:button="@drawable/radiobutton_background"
+			/
+            -->
+        </RadioGroup>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="3px"
+            android:background="#ababab" />
+
+        <FrameLayout
+            android:id="@+id/checkout_first_step_frame"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <include
+                android:id="@+id/checkout_first_step_frame_1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/checkout_second_step_address" />
+
+            <include
+                android:id="@+id/checkout_first_step_frame_2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/checkout_second_step_geo" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="3px"
+            android:background="#ababab" />
+
+        <LinearLayout
+            android:id="@+id/checkout_first_step_time_frame"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dip"
+                android:paddingLeft="5dip"
+                android:paddingTop="5dip"
+                android:text="Выберите дату доставки:"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Spinner
+                    android:id="@+id/checkout_first_step_date_spinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:drawSelectorOnTop="true"
+                    android:prompt="@string/checkout_first_step_date_spinne_text" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="3px"
+            android:background="#ababab" />
+
+        <Button
+            android:id="@+id/checkout_first_step_next_b"
+            style="@style/customButtonBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="15dp"
+            android:text="Далее" />
+    </LinearLayout>
+
+</ScrollView>

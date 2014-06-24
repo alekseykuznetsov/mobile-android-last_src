@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Каталог, главный экран -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black" >
+
+    <FrameLayout
+        android:id="@+id/catalog_linear_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+<!-- 
+    <LinearLayout
+        android:id="@+id/catalog_header_shoplocator"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="#424244"
+        android:layout_below="@id/catalog_linear_layout"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/catalog_header_shoplocator_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:text="Выберите магазин"
+            android:textColor="@color/white"
+            android:textSize="12sp" />   
+       
+        <ImageButton
+            android:id="@+id/catalog_header_shoplocator_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_vertical"
+            android:padding="5dp"
+            android:background="@drawable/btn_black_square_background"
+            android:scaleType="centerInside"
+            android:src="@drawable/icn_map" />
+    </LinearLayout>
+     -->
+
+<!-- android:layout_below="@id/catalog_header_shoplocator"  -->
+    <FrameLayout
+        android:layout_below="@id/catalog_linear_layout"        
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:paddingBottom="10dp" >
+
+        <GridView
+            android:id="@+id/catalog_grid"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:horizontalSpacing="10dip"
+            android:listSelector="@drawable/btn_catalog_0"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:verticalSpacing="10dip" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/catalog_frame_progress"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#B9000000"
+        android:clickable="true"
+        android:visibility="gone" >
+
+        <ProgressBar
+            style="@style/customProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+</RelativeLayout>

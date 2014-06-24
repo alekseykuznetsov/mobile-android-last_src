@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="light_gray">#C9D6D5</color>
+    <color name="light_orange">#F5D02C</color>
+    <color name="light_blue">#61c6f0</color>
+    
+    <color name="light_gray_service">#e2e2e2</color>
+    
+    <color name="dark_gray">#969590</color>
+    <color name="simple_gray">#636363</color>
+    <color name="cardtab_gray">#2e2e2e</color>
+    
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="green">#00FF00</color>
+
+    <color name="translucent_black">#D9000000</color>
+    
+    <color name="actionbar">#222222</color>
+    <color name="actionbar_popup_border">#aeaeae</color>
+    <color name="actionbar_tab_text">#e2e2e2</color>
+    
+    <color name="list_grey_divider">#424244</color>
+
+ <!-- timeline -->
+
+</resources>

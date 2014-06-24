@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:padding="20dp" >
+
+        <EditText
+            android:id="@+id/personal_acc_add_address_edittext_street"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="Улица"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/personal_acc_add_address_edittext_house"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:hint="Дом"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/personal_acc_add_address_edittext_housing"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:hint="Корпус"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/personal_acc_add_address_edittext_floor"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:hint="Этаж"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/personal_acc_add_address_edittext_flat"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:hint="Квартира"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal" 
+            android:gravity="center_horizontal">
+
+
+            <Button
+                android:id="@+id/personal_acc_add_address_button_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_btn_orange_solid"
+                android:shadowColor="#000000"
+                android:shadowDx="0"
+                android:shadowDy="-1"
+                android:shadowRadius="1"
+                android:text="Применить"
+                android:textColor="#ffffff"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

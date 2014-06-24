@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+    <FrameLayout
+	  android:id="@+id/header_frame"
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:background="#00f000">
+	  	<TextView 
+		         android:text="Шаг 2.Адрес доставки и форма оплаты" 
+		         android:layout_height="wrap_content" 
+		         android:layout_width="wrap_content" 
+		         android:id="@+id/zagolovok" 
+		         android:layout_gravity="center"
+		         android:textStyle="bold"
+		         android:textSize = "15sp"
+		         android:textColor="@android:color/black"
+		         android:layout_marginLeft="5dp" />
+	</FrameLayout>
+	<LinearLayout 
+		  android:orientation="horizontal"
+		  android:layout_width="fill_parent"
+		  android:layout_height="wrap_content">
+		  	<EditText
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/name1_edit_text"
+				android:hint="Михаил"
+				android:layout_marginTop="10dp"
+				/>
+			<EditText
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/name2_edit_text"
+				android:hint="Михайлов"
+				android:layout_marginTop="10dp"
+				/>
+	</LinearLayout>
+	<LinearLayout 
+		  android:orientation="horizontal"
+		  android:layout_width="fill_parent"
+		  android:layout_height="wrap_content">
+		  	<EditText
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/name3_edit_text"
+				android:hint="89275322499"
+				android:layout_marginTop="10dp"
+				/>
+			<EditText
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/name4_edit_text"
+				android:hint="emal@mail.ru"
+				android:layout_marginTop="10dp"
+				/>
+	</LinearLayout>	
+				<View
+					android:layout_width="fill_parent"
+					android:layout_height="2dip"			
+					android:background="@android:color/white"
+					/>
+				<TextView 
+				 android:layout_width="fill_parent"
+				 android:layout_height="wrap_content"
+				 android:text="Выберите магазин из списка или воспользуйтесь геолокацией для поиска ближайшего магазина" 
+		         android:id="@+id/text1.1" 
+		         android:layout_gravity="center"
+		         android:textStyle="bold"
+		         android:textSize = "15sp"
+		         android:textColor="@android:color/white"
+		         android:layout_marginLeft="5dp"
+		         />
+		    <LinearLayout 
+	   		  android:orientation="horizontal"
+			  android:layout_width="fill_parent"
+			  android:layout_height="wrap_content"
+			  >	
+				    <Spinner 
+				    android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:id="@+id/spinner"
+			        />
+					<Button
+					 android:text="Геолокация" 
+			         android:layout_height="wrap_content" 
+			         android:layout_width="wrap_content" 
+			         android:id="@+id/geolokaciya_Button"              
+			         android:textStyle="bold"
+			         />
+			</LinearLayout>
+		<LinearLayout 
+				  android:layout_width="fill_parent"
+				  android:layout_height="wrap_content"
+				  android:orientation= "vertical">
+			<TextView 
+				 android:layout_width="fill_parent"
+				 android:layout_height="wrap_content"
+				 android:text="Способ оплаты" 
+		         android:id="@+id/text1.2" 
+		         android:layout_gravity="center"
+		         android:textStyle="bold"
+		         android:textSize = "15sp"
+		         android:textColor="@android:color/white"
+		         android:layout_marginLeft="5dp"/>
+			 <CheckBox 
+					android:id="@+id/checkBox1_1" 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+					android:text="  картой в приложении" 
+					android:textStyle="bold"
+					android:textSize = "20sp"
+					android:textColor="@android:color/white"
+					android:layout_marginLeft="10dp"
+					/>
+					<CheckBox 
+					android:id="@+id/checkBox1_2" 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+					android:text="  Карта курьеру при получении" 
+					android:textStyle="bold"
+					android:textSize = "20sp"
+					android:textColor="@android:color/white"
+					android:layout_marginLeft="10dp"
+					/>
+					<CheckBox 
+					android:id="@+id/checkBox1_3" 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+					android:text="  Наличные курьеру" 
+					android:textStyle="bold"
+					android:textSize = "20sp"
+					android:textColor="@android:color/white"
+					android:layout_marginLeft="10dp"
+					/>
+					<CheckBox 
+					android:id="@+id/checkBox1_4" 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+					android:text="  Электронные деньги" 
+					android:textStyle="bold"
+					android:textSize = "20sp"
+					android:textColor="@android:color/white"
+					android:layout_marginLeft="10dp"
+					/>
+					<Button
+					 android:text="Далее" 
+			         android:layout_height="wrap_content" 
+			         android:layout_width="wrap_content" 
+			         android:id="@+id/dalee_Button"              
+			         android:textStyle="bold"
+			         android:layout_gravity="right"
+			         />
+		  </LinearLayout>
+</LinearLayout>

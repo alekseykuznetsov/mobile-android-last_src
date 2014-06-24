@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_gradient_background"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/my_orders_product_list_row_image"
+        android:layout_width="60dip"
+        android:layout_height="70dip"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/cap" >
+    </ImageView>
+
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/pic_arrow"/>
+    
+    <TextView
+        android:id="@+id/my_orders_product_list_row_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/my_orders_product_list_row_image"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:paddingRight="20dp"
+        android:text="Samsung Galaxy-Slakf;lkfdl;sdkaskflkasl;fk;llkda;ldfk;akfl;sdkfl;askfa" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/my_orders_product_list_row_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/my_orders_product_list_row_image"
+        android:layout_below="@id/my_orders_product_list_row_title"
+        android:layout_toRightOf="@id/my_orders_product_list_row_image"
+        android:gravity="bottom"
+        android:text="Колличество:1" />
+
+    <LinearLayout
+        android:id="@+id/my_orders_product_list_row_rubbish_lay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/my_orders_product_list_row_num"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/my_orders_product_list_row_title"
+        android:layout_toRightOf="@id/my_orders_product_list_row_num"
+        android:gravity="right|bottom" >
+
+        <TextView
+            android:id="@+id/my_orders_product_list_row_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="15"
+            android:text="100900Р"
+            android:textStyle="bold" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/my_orders_product_list_row_price_symbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="15"
+            android:text=" p"
+            android:textStyle="bold" >
+        </TextView>
+    </LinearLayout>
+
+</RelativeLayout>

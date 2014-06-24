@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/services_right_fr_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="К сожалению, в данной категории нет услуг"
+        android:textColor="#BBBBBB"
+        android:textSize="28dp"
+        android:visibility="gone" />
+
+    <ExpandableListView
+        android:id="@+id/services_right_fr_expListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:divider="#BBBBBB"
+        android:childDivider="#BBBBBB"
+        android:groupIndicator="@null"
+		android:dividerHeight="1dp"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+
+</LinearLayout>

@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_texture"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/order_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:padding="9dp" >
+
+        <ListView
+            android:id="@+id/order_complete_ac_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/order_complete_ac_bottom_footer"
+            android:divider="#BBBBBB"
+            android:dividerHeight="1dp"
+            android:fadingEdgeLength="5dp"
+            android:overScrollMode="never"
+            android:scrollbars="none" />
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/order_complete_ac_bottom_footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <ru.enter.widgets.TextViewBold
+                        android:id="@+id/order_complete_ac_label_payment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Оплата:"
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+
+                    <ru.enter.widgets.TextViewNormal
+                        android:id="@+id/order_complete_ac_text_payment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/order_complete_ac_label_payment"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/order_complete_ac_label_payment"
+                        android:text="наличными"
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+
+                    <ru.enter.widgets.TextViewBold
+                        android:id="@+id/order_complete_ac_label_delivery"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/order_complete_ac_label_payment"
+                        android:layout_marginTop="10dp"
+                        android:text="Доставка:"
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+
+                    <ru.enter.widgets.TextViewNormal
+                        android:id="@+id/order_complete_ac_text_delivery"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/order_complete_ac_label_delivery"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/order_complete_ac_label_delivery"
+                        android:text="самовывоз 24.08.2012"
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+
+                    <ru.enter.widgets.TextViewBold
+                        android:id="@+id/order_complete_ac_label_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/order_complete_ac_label_delivery"
+                        android:layout_marginTop="10dp"
+                        android:text="Адрес:"
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+
+                    <ru.enter.widgets.TextViewNormal
+                        android:id="@+id/order_complete_ac_text_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/order_complete_ac_label_address"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/order_complete_ac_label_address"
+                        android:singleLine="true"
+                        android:text="г. Москва ул. Полянка 24/8"
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/order_complete_ac_linear_products_count"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+                        <ru.enter.widgets.TextViewBold
+                            android:id="@+id/order_complete_ac_label_products_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Кол-во товаров:"
+                            android:textColor="#000000"
+                            android:textSize="18dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="4dp"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="4dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/basket_bg_multiple" />
+
+                        <ru.enter.widgets.TextViewBold
+                            android:id="@+id/order_complete_ac_text_products_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000000"
+                            android:textSize="18dp" />
+
+                        <ru.enter.widgets.TextViewBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="шт."
+                            android:textColor="#000000"
+                            android:textSize="18dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/order_complete_ac_linear_services_count"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:paddingTop="5dp" >
+
+                        <ru.enter.widgets.TextViewBold
+                            android:id="@+id/order_complete_ac_label_services_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Кол-во услуг:"
+                            android:textColor="#000000"
+                            android:textSize="18dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="4dp"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="4dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/basket_bg_multiple" />
+
+                        <ru.enter.widgets.TextViewBold
+                            android:id="@+id/order_complete_ac_text_services_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000000"
+                            android:textSize="18dp" />
+
+                        <ru.enter.widgets.TextViewBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="шт."
+                            android:textColor="#000000"
+                            android:textSize="18dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/order_complete_ac_linear_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:paddingTop="5dp" >
+
+                        <ru.enter.widgets.TextViewBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Цена доставки:"
+                            android:textColor="#000000"
+                            android:textSize="18dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="4dp"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="4dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/basket_bg_multiple" />
+
+                        <ru.enter.widgets.TextViewBold
+                            android:id="@+id/order_complete_ac_text_delivery_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000000"
+                            android:textSize="18dp" />
+
+                        <ru.enter.widgets.TextViewBold
+                            android:id="@+id/order_complete_ac_text_delivery_ruble"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Р"
+                            android:textColor="#000000"
+                            android:textSize="18dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:orientation="horizontal"
+                        android:paddingTop="15dp" >
+
+                        <ru.enter.widgets.TextViewNormal
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Итого:"
+                            android:textColor="#000000"
+                            android:textSize="24dp" />
+
+                        <ru.enter.widgets.TextViewBold
+                            android:id="@+id/order_complete_ac_text_total"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:text="209 990"
+                            android:textColor="#000000"
+                            android:textSize="24dp" />
+
+                        <ru.enter.widgets.TextViewNormal
+                            android:id="@+id/order_complete_ac_label_total_ruble"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Р"
+                            android:textColor="#000000"
+                            android:textSize="24dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="15dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <CheckBox
+                        android:id="@+id/order_complete_ac_chekbox_agreement"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/order_radiobutton_selector"
+                        android:text="Я согласен (-сна) с "
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+
+                    <ru.enter.widgets.TextViewBold
+                        android:id="@+id/order_complete_ac_text_agreement"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="условиями продажи и доставки"
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <ru.enter.widgets.ButtonBold
+                    android:id="@+id/order_complete_ac_button_confirm_order"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/selector_btn_solid_orange"
+                    android:shadowColor="#000000"
+                    android:shadowDx="0"
+                    android:shadowDy="-1"
+                    android:shadowRadius="1"
+                    android:text="Подтвердить"
+                    android:textColor="#ffffff"
+                    android:textSize="18dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

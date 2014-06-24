@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Строка в списке комментариев -->
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:paddingLeft="20dp">
+    <TextView 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:layout_alignParentLeft="true" 
+    android:id="@+id/comments_list_row_name"
+    android:text="name"
+    android:layout_marginRight="10dp" 
+    >
+    </TextView>
+    <TextView 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:layout_below="@+id/comments_list_row_name" 
+    android:id="@+id/comments_list_row_text" 
+    android:text="text"
+	>
+    </TextView>
+    <TextView 
+    android:layout_width="wrap_content" 
+    android:layout_toRightOf="@+id/comments_list_row_name" 
+    android:layout_height="wrap_content" 
+    android:id="@+id/comments_list_row_date" 
+    android:text="date"
+	>
+    </TextView>
+    
+</RelativeLayout>

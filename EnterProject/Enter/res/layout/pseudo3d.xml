@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Псевдо 3Д. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pseudo3d_frame"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+	<TextView 
+	    android:id="@+id/pseudo3d_name"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:textColor="@android:color/black"
+	    android:textSize="16sp"
+	    android:textStyle="bold"
+	    android:layout_marginTop="10dip"
+	    />
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+
+        <ProgressBar
+            style="@style/customProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/pseudo3d_image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true" >
+        </ImageView>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dip" >
+
+        <Button
+            android:id="@+id/pseudo3d_wish_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dip"
+            android:background="@drawable/btn_wishlist_background"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" >
+
+            <TextView
+                android:id="@+id/pseudo3d_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5000" />
+
+            <TextView
+                android:id="@+id/pseudo3d_price_symb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" p" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/pseudo3d_basket_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dip"
+            android:background="@drawable/btn_basket_background" />
+    </RelativeLayout>
+
+</LinearLayout>

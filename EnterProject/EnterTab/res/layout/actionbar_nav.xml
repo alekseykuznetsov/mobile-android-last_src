@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/actionbar_nav_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="left|center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/actionbar_nav_spinner"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_height="match_parent"
+        android:background="@android:drawable/list_selector_background"
+        android:text="testing"
+        android:gravity="left|center_vertical"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+	
+    <TextView
+        android:id="@+id/actionbar_nav_text"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:text="Категория товара"
+        android:gravity="left|center_vertical"
+        android:textColor="@color/about_bank_gray"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+</LinearLayout>

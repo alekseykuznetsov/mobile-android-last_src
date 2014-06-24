@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_list_tab_main_lay"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/search_list_tab_frame"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:gravity="center" >
+
+            <EditText
+                android:id="@+id/search_list_tab_edit_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/tab2"
+                android:drawablePadding="1dip"
+                android:gravity="left|center_vertical"
+                android:imeOptions="actionSearch"
+                android:maxLines="1"
+                android:paddingRight="50dip"
+                android:singleLine="true" />
+
+            <ImageView
+                android:id="@+id/search_list_tab_image_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/search_list_tab_edit_text"
+                android:layout_centerInParent="true"
+                android:paddingRight="13dip"
+                android:src="@drawable/icn_cancel" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/search_list_tab_search_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bar_grey"
+            android:orientation="horizontal"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip" >
+
+            <Button
+                android:id="@+id/search_list_tab_full_search_btn"
+                style="@style/customSearchButtonBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/btn_switch_left_background"
+                android:text="По каталогу" />
+
+            <Button
+                android:id="@+id/search_list_tab_by_articul_btn"
+                style="@style/customSearchButtonBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/btn_switch_med_background"
+                android:text="По артикулу" />
+
+            <Button
+                android:id="@+id/search_list_tab_by_number_btn"
+                style="@style/customSearchButtonBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/btn_switch_med_background"
+                android:text="По № списка" />
+
+            <Button
+                android:id="@+id/search_list_tab_by_qr_code_btn"
+                style="@style/customSearchButtonBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/btn_switch_right_background"
+                android:text="По QR-коду" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#ffffff" >
+
+                <ListView
+                    android:id="@+id/search_list_tab_list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:cacheColorHint="#ffffff"
+                    android:divider="#dcdcdc"
+                    android:dividerHeight="1px"
+                    android:smoothScrollbar="true" />
+
+                <ProgressBar
+                    android:id="@+id/search_list_tab_progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/search_list_tab_error_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dip"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/search_list_tab_error_image"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:background="@color/white"
+                    android:src="@drawable/icon"
+                    android:visibility="invisible" />
+            </FrameLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>

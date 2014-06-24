@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_gradient_background"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+        <CheckBox 
+        android:layout_width="wrap_content" 
+        android:id="@+id/wishlist_footer_check_all" 
+        android:layout_alignParentLeft="true" 
+        android:text="Выделить все" 
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:textSize="14sp"
+        android:button="@drawable/checkbox_background">
+        </CheckBox>
+        <Button 
+        android:id="@+id/wishlist_footer_button_clear" 
+        android:layout_width="wrap_content" 
+        android:layout_toLeftOf="@+id/wishlist_footer_button_move" 
+        android:text="Очистить" 
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_btn_orange_solid"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:padding="5dp">
+        </Button>
+        <Button 
+        android:id="@+id/wishlist_footer_button_move" 
+        android:layout_width="wrap_content" 
+        android:layout_alignParentRight="true" 
+        android:text="Перенести"
+        android:textStyle="bold" 
+        android:textColor="@android:color/white"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_btn_orange_solid"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:padding="5dp">
+        </Button>
+  </RelativeLayout>

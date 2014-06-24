@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Активная -->
+    <item android:color="#ffffff"  
+        android:state_enabled="true"
+        android:state_pressed="false"
+        android:state_selected="false"/>
+
+    <!-- Нажатая -->
+    <item android:color="#000000"
+        android:state_enabled="true"
+        android:state_pressed="false"
+        android:state_selected="true"/>
+
+    <!-- Удерживаемая -->
+    <item android:color="#000000"
+        android:state_enabled="true"
+        android:state_pressed="true"
+        android:state_selected="false"/>
+    
+    <!-- Удерживаемая нажатая-->
+    <item android:color="#000000"
+        android:state_enabled="true"
+        android:state_pressed="true"
+        android:state_selected="true"/>
+    
+    <!-- Не активная -->
+    <item android:color="#000000"
+        android:state_enabled="false"
+        android:state_pressed="false"
+        android:state_selected="false"/>
+    
+</selector>
